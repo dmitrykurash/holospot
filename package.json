@@ -28,7 +28,8 @@
     "schema",
     "AGENTS.md",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "!docs/img"
   ],
   "engines": {
     "node": ">=22.18"
