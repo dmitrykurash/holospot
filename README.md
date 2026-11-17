@@ -120,6 +120,7 @@ renderer.setAnimationLoop(() => holo.render(scene, camera));   // instead of ren
 - Works with the scene you already have. Your other objects, lights, background and tone mapping are drawn by your renderer as before; the holographic object is composited in and hidden where your objects are in front of it.
 - A look copied from holo.spot is passed as `settings`, unchanged.
 - One ES module, `dist/holo.js`, with three.js (r170 or newer) as its only dependency. It needs `THREE.WebGLRenderer`; the WebGPU renderer is not supported.
+- No install needed for a single page: load it from `https://cdn.jsdelivr.net/gh/dmitrykurash/holospot@v0.1.0/dist/holo.js` in an import map ([AGENTS.md](AGENTS.md) shows how).
 
 ### Try it
 

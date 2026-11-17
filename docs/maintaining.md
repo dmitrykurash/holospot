@@ -41,4 +41,4 @@ Software rendering takes one to five minutes per view. Use `--only name,name` fo
 
 1. `npm run build` and commit `dist/` (people load `dist/holo.js` straight from the repository).
 2. Run every recipe through `tools/shot.mjs` and look at the pictures.
-3. Tag the commit. A tag gives stable CDN addresses such as `https://cdn.jsdelivr.net/gh/<owner>/holospot@<tag>/dist/holo.js`.
+3. Tag the commit (`v0.1.0`, `v0.2.0` …) and update the version in the CDN address that `AGENTS.md` and `README.md` show: `https://cdn.jsdelivr.net/gh/dmitrykurash/holospot@<tag>/dist/holo.js`.

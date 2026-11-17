@@ -21,17 +21,19 @@ renderer.setAnimationLoop(() => holo.render(scene, camera));   // instead of ren
 
 ## Loading the kit
 
-In a page without a build step, map the names in an import map (the kit needs `three` to be the same copy your scene uses):
+In a page without a build step, map the names in an import map (the kit needs `three` to be the same copy your scene uses). The quickest way loads the kit straight from this repository through a CDN, with nothing to copy:
 
 ```html
 <script type="importmap">{ "imports": {
   "three": "https://cdn.jsdelivr.net/npm/three@0.187.0/build/three.module.js",
   "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.187.0/examples/jsm/",
-  "holospot": "./holo/dist/holo.js"
+  "holospot": "https://cdn.jsdelivr.net/gh/dmitrykurash/holospot@v0.1.0/dist/holo.js"
 } }</script>
 ```
 
-Copy `dist/holo.js` and the `assets/` folder together, keeping them side by side (`holo/dist/holo.js`, `holo/assets/…`): the kit loads bump maps and hologram volumes from `../assets/` relative to `holo.js`. If they live elsewhere, pass `new Holo(renderer, { assets: "https://…/assets/" })`. In a bundled project, import `dist/holo.js` the same way and serve `assets/` as static files.
+Use this for a single-file page (a chat answer, a quick demo). Keep the `@v0.1.0`: a fixed version never changes under the page. The kit finds its bump maps and hologram volumes next to that address by itself.
+
+To host the files yourself, copy `dist/holo.js` and the `assets/` folder together, keeping them side by side (`holo/dist/holo.js`, `holo/assets/…`), and map `"holospot": "./holo/dist/holo.js"`. The kit loads its assets from `../assets/` relative to `holo.js`; if they live elsewhere, pass `new Holo(renderer, { assets: "https://…/assets/" })`. In a bundled project, import `dist/holo.js` the same way and serve `assets/` as static files.
 
 Requirements: three.js r170 or newer (built and checked on r187), `THREE.WebGLRenderer` (WebGL 2). `WebGPURenderer` is not supported.
 
