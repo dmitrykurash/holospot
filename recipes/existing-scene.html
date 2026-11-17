@@ -1,0 +1,65 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Holographic object in an existing scene · holospot</title>
+<style>html, body { margin: 0; height: 100%; background: #14171c; } canvas { display: block; }</style>
+<script type="importmap">{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.187.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.187.0/examples/jsm/",
+  "holospot": "../dist/holo.js"
+} }</script>
+<script type="module">
+// An ordinary three.js scene (its own lights, materials, background, tone mapping) with ONE object made holographic.
+// Everything else is drawn by your renderer exactly as before; the kit composites the holographic object over it and
+// hides it where your objects are in front. Three lines are the kit's: new Holo, holo.apply, holo.render.
+import * as THREE from "three";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import { Holo } from "holospot";
+
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.setSize(innerWidth, innerHeight);
+renderer.toneMapping = THREE.ACESFilmicToneMapping;    // yours: kept for everything the kit does not draw
+document.body.appendChild(renderer.domElement);
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x14171c);
+const camera = new THREE.PerspectiveCamera(35, innerWidth / innerHeight, 0.1, 100);
+camera.position.set(3.2, 2.2, 6.5);
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.target.set(0, 0.9, 0);
+controls.enableDamping = true;
+
+scene.add(new THREE.HemisphereLight(0xffffff, 0x334455, 2));
+const sun = new THREE.DirectionalLight(0xffffff, 2.5);
+sun.position.set(4, 6, 3);
+scene.add(sun);
+const floor = new THREE.Mesh(new THREE.CylinderGeometry(4, 4, 0.2, 64), new THREE.MeshStandardMaterial({ color: 0x3a4250, roughness: 0.8 }));
+floor.position.y = -0.1;
+const plinth = new THREE.Mesh(new THREE.BoxGeometry(1.2, 0.5, 1.2), new THREE.MeshStandardMaterial({ color: 0xd9d4c8, roughness: 0.6 }));
+plinth.position.y = 0.25;
+const pillar = new THREE.Mesh(new THREE.CylinderGeometry(0.15, 0.15, 2.4, 32), new THREE.MeshStandardMaterial({ color: 0xc8553a, roughness: 0.5 }));
+pillar.position.set(1.3, 1.2, 1.4);
+scene.add(floor, plinth, pillar);
+
+// the object to make holographic: it stays in your scene, and you keep moving it as usual
+const statue = new THREE.Mesh(new THREE.IcosahedronGeometry(0.7, 3), new THREE.MeshStandardMaterial({ color: 0x999999 }));
+statue.position.y = 1.25;
+scene.add(statue);
+
+// background: how light the surroundings are (the foil's lighting adapts to it, as on holo.spot)
+const holo = new Holo(renderer, { background: "#14171c" });
+holo.apply(statue, { material: "prism", sizeMm: 150 });
+holo.expose();
+
+renderer.setAnimationLoop((t) => {
+  statue.rotation.y = t / 2500;
+  controls.update();
+  holo.render(scene, camera);
+});
+addEventListener("resize", () => {
+  camera.aspect = innerWidth / innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight);
+});
+</script>

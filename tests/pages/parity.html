@@ -1,0 +1,49 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>holospot · parity page</title>
+<style>html, body { margin: 0; height: 100%; background: #000; } canvas { display: block; width: 100vw; height: 100vh; }</style>
+<script type="importmap">{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.187.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.187.0/examples/jsm/"
+} }</script>
+<script type="module">
+// One view of tools/parity.mjs, drawn by the kit: the same model, material, settings, tilt and camera that the tool
+// asks holo.spot's own code for. Query: view = { material, quality, tilt: [rx, ry, rz], settings: { id: value }, model }.
+import * as THREE from "three";
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+import { Holo, shotCamera } from "../../dist/holo.js";
+
+const view = JSON.parse(new URLSearchParams(location.search).get("view"));
+const renderer = new THREE.WebGLRenderer({ antialias: false, alpha: false });
+renderer.setPixelRatio(1);
+renderer.setSize(innerWidth, innerHeight);
+document.body.appendChild(renderer.domElement);
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera();
+const holo = new Holo(renderer, { quality: view.quality });
+holo.expose();
+// an arbitrary place, scale and unit: the kit must give the same picture wherever the object stands
+let holder, obj;
+if (view.card) {
+  holder = holo.card({ material: view.material, look: "plain", settings: view.settings ?? {}, size: 4.2 });
+  holder.position.set(3, -2, 5);
+  scene.add(holder);
+  obj = holo.get(holder);
+} else {
+  const gltf = await new GLTFLoader().loadAsync(view.model);
+  holder = new THREE.Group();
+  holder.add(gltf.scene);
+  holder.position.set(3, -2, 5);
+  holder.scale.setScalar(view.scale ?? 7.5);
+  scene.add(holder);
+  obj = holo.apply(holder, { material: view.material, look: "plain", settings: view.settings ?? {}, sizeMm: view.sizeMm ?? 90 });
+}
+await obj.ready;
+const [rx, ry, rz] = view.tilt ?? [0, 0, 0], d = Math.PI / 180;
+// the tilt turns the object about its own centre (the site poses the model about its bounding-box centre)
+const pivot = new THREE.Box3().setFromObject(holder, true).getCenter(new THREE.Vector3());
+const turn = new THREE.Matrix4().makeTranslation(pivot).multiply(new THREE.Matrix4().makeRotationFromEuler(new THREE.Euler(rx * d, ry * d, rz * d, "XYZ"))).multiply(new THREE.Matrix4().makeTranslation(pivot.clone().negate()));
+shotCamera(camera, obj, { aspect: innerWidth / innerHeight, lensMm: Number(holo.scene["dof.lens"]), view: { az: 0, el: 0, zoom: 1, offset: [0, 0, 0] } });
+holder.applyMatrix4(turn);
+renderer.setAnimationLoop(() => holo.render(scene, camera, { time: 0, dt: 0, still: true }));
+</script>

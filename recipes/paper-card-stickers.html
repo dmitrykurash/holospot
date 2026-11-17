@@ -1,0 +1,54 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paper card with a foil logo and hologram stickers · holospot</title>
+<style>html, body { margin: 0; height: 100%; background: #fff; } canvas { display: block; touch-action: none; }</style>
+<script type="importmap">{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.187.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.187.0/examples/jsm/",
+  "holospot": "../dist/holo.js"
+} }</script>
+<script type="module">
+// The paper card (material "emboss"): heavy cotton paper carrying up to six elements, each either a hot-stamped foil
+// logo or a volumetric hologram sticker with a 3D subject floating inside it. The elements are a small JSON document.
+import * as THREE from "three";
+import { Holo, shotCamera, shotRotation } from "holospot";
+
+const renderer = new THREE.WebGLRenderer();
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.setSize(innerWidth, innerHeight);
+document.body.appendChild(renderer.domElement);
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera();
+
+// Positions and sizes are millimetres on the 63 × 88 mm face, x from the left edge, y from the bottom edge.
+// t: "f" = foil logo, "h" = hologram sticker. p: only what differs from the defaults (docs/materials/emboss.md).
+const elements = { v: 1, e: [
+  { i: "e1", t: "f", n: "Logo", p: { logo: "/logos/rosette.svg", x: 31.5, y: 58, width: 34, foil: "concentric" } },
+  { i: "e2", t: "h", n: "Eagle", p: { shape: "circle", x: 20, y: 20, width: 22, "holo.subject": "eagle" } },
+  { i: "e3", t: "h", n: "Globe", p: { shape: "rounded", x: 44, y: 20, width: 20, "holo.subject": "globe" } },
+] };
+
+const holo = new Holo(renderer);
+const card = holo.card({ material: "emboss", settings: { "emboss.doc": JSON.stringify(elements), "emboss.stock": "cotton" } });
+scene.add(card);
+holo.expose();
+
+const obj = holo.get(card);
+await obj.ready;
+const frame = () => shotCamera(camera, obj, { aspect: innerWidth / innerHeight });
+frame();
+const rest = shotRotation(obj.pose);
+const target = { x: 0, y: 0 }, now = { x: 0, y: 0 };
+addEventListener("pointermove", (e) => {
+  target.y = ((e.clientX / innerWidth) * 2 - 1) * 16;
+  target.x = ((e.clientY / innerHeight) * 2 - 1) * 16;
+});
+renderer.setAnimationLoop(() => {
+  now.x += (target.x - now.x) * 0.12;
+  now.y += (target.y - now.y) * 0.12;
+  card.rotation.set(rest.x + THREE.MathUtils.degToRad(now.x), rest.y + THREE.MathUtils.degToRad(now.y), rest.z, "XYZ");
+  holo.render(scene, camera);
+});
+addEventListener("resize", () => { renderer.setSize(innerWidth, innerHeight); frame(); });
+</script>

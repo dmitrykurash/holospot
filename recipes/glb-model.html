@@ -1,0 +1,64 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your GLB model in holographic foil · holospot</title>
+<style>html, body { margin: 0; height: 100%; background: #fff; font: 14px system-ui, sans-serif; } canvas { display: block; }
+  #drop { position: fixed; left: 16px; bottom: 16px; padding: 8px 12px; background: rgba(0, 0, 0, 0.7); color: #fff; border-radius: 8px; }</style>
+<script type="importmap">{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.187.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.187.0/examples/jsm/",
+  "holospot": "../dist/holo.js"
+} }</script>
+<div id="drop">Drop a .glb file here, or open this page with ?model=URL</div>
+<script type="module">
+// A GLB model wrapped in holographic foil. The model's own materials and textures are not used: its shape is.
+// The kit merges every mesh of the model into one object and picks the surface mapping itself (the model's UVs when
+// they are usable, otherwise a box projection). Without a model the page shows a stand-in shape.
+import * as THREE from "three";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+import { Holo, shotCamera } from "holospot";
+
+const q = new URLSearchParams(location.search);
+const renderer = new THREE.WebGLRenderer();
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.setSize(innerWidth, innerHeight);
+document.body.appendChild(renderer.domElement);
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera();
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+
+const holo = new Holo(renderer);
+holo.expose();
+let current = null;
+
+async function show(object) {
+  if (current) { holo.remove(current); scene.remove(current); }
+  current = object;
+  scene.add(object);
+  // sizeMm 90 is what holo.spot gives an uploaded model; "structureScale" makes shards and flakes larger or smaller
+  const obj = holo.apply(object, { material: q.get("material") ?? "nebula", sizeMm: 90 });
+  await obj.ready;
+  shotCamera(camera, obj, { aspect: innerWidth / innerHeight, view: { ...obj.view, offset: [0, 0, 0] } });
+  controls.target.copy(new THREE.Box3().setFromObject(object).getCenter(new THREE.Vector3()));
+  controls.update();
+}
+
+const loader = new GLTFLoader();
+if (q.get("model")) show((await loader.loadAsync(q.get("model"))).scene);
+else show(new THREE.Mesh(new THREE.TorusKnotGeometry(1, 0.34, 220, 36), new THREE.MeshStandardMaterial()));
+
+addEventListener("dragover", (e) => e.preventDefault());
+addEventListener("drop", async (e) => {
+  e.preventDefault();
+  const file = e.dataTransfer.files[0];
+  if (file) show((await loader.parseAsync(await file.arrayBuffer(), "")).scene);
+});
+renderer.setAnimationLoop(() => { controls.update(); holo.render(scene, camera); });
+addEventListener("resize", () => {
+  camera.aspect = innerWidth / innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight);
+});
+</script>

@@ -1,0 +1,46 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Video: turntable · holospot</title>
+<style>html, body { margin: 0; height: 100%; background: #000; } canvas { display: block; }</style>
+<script type="importmap">{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.187.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.187.0/examples/jsm/",
+  "holospot": "../dist/holo.js"
+} }</script>
+<script type="module">
+// A page made to be rendered into a video by tools/render-video.mjs:
+//   node tools/render-video.mjs --page recipes/video-turntable.html --seconds 6 --fps 30 --size 1280x720 --gl native
+// The rule for such a page: window.renderFrame(t) draws the frame for time t [s] from nothing but t. No clock, no
+// state carried from frame to frame. Opened in a browser, the same function simply runs on the clock.
+import * as THREE from "three";
+import { Holo, shotCamera } from "holospot";
+
+const q = new URLSearchParams(location.search);
+const FPS = Number(q.get("fps") ?? 30), LOOP_S = Number(q.get("loop") ?? 6);
+
+const renderer = new THREE.WebGLRenderer();
+renderer.setPixelRatio(1);                                         // the video's pixels are the page's pixels
+renderer.setSize(innerWidth, innerHeight);
+document.body.appendChild(renderer.domElement);
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera();
+const mesh = new THREE.Mesh(new THREE.TorusKnotGeometry(1, 0.34, 260, 40), new THREE.MeshStandardMaterial());
+scene.add(mesh);
+
+const holo = new Holo(renderer, { background: "black", quality: q.get("quality") ?? "high" });
+const obj = holo.apply(mesh, { material: q.get("material") ?? "shatter", sizeMm: 120, settings: { "dof.on": false, "grain.animated": true } });
+holo.expose();
+await obj.ready;
+shotCamera(camera, obj, { aspect: innerWidth / innerHeight, view: { az: 0, el: 12, zoom: 1.05, offset: [0, 0, 0] } });
+
+// one full turn every LOOP_S seconds with a slow nod: the clip loops seamlessly
+function draw(t) {
+  const a = (t / LOOP_S) * Math.PI * 2;
+  mesh.rotation.set(0.25 * Math.sin(a), a, 0);
+  holo.render(scene, camera, { time: t, dt: 1 / FPS });
+}
+// the video tool drives the page through renderFrame; until it does, the page plays on the clock
+let offline = false;
+window.renderFrame = (t) => { offline = true; draw(t); };
+renderer.setAnimationLoop((ms) => { if (!offline) draw(ms / 1000); });
+</script>

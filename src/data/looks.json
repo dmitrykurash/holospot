@@ -1,0 +1,2883 @@
+{
+ "card": {
+  "title": "Holographic card",
+  "material": "prism",
+  "quality": "medium",
+  "surfaces": {
+   "prism": {
+    "values": {
+     "scene.orbitGlide": 0.56,
+     "scene.autoMotion": false,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "studio.panel.dir": {
+      "x": -0.64,
+      "y": 0.22
+     },
+     "studio.spotA.dir": {
+      "x": -0.6,
+      "y": 0.32
+     },
+     "studio.spotB.dir": {
+      "x": -0.26,
+      "y": -0.48
+     },
+     "studio.spotC.on": true,
+     "studio.spotC.dir": {
+      "x": -0.65,
+      "y": 0.47
+     },
+     "studio.ambient.rims": 1,
+     "studio.ambient.fill": 0.8,
+     "studio.ambient.scrim": 0.5,
+     "studio.ambient.cameraSide": 0.019,
+     "studio.ambient.cameraTexture": 0.85,
+     "studio.ambient.backdrop": 0.84,
+     "studio.ambient.rotation": -61,
+     "studio.flash.size": 11,
+     "studio.flash.distance": 0.33,
+     "grain.amount": 0.07,
+     "card.emboss": "lines",
+     "card.embossPitch": 0.26,
+     "card.border": "foil",
+     "card.edgeSilver": false,
+     "card.wear": 0,
+     "bump.strength": 0.31,
+     "bump.tiling": 2.5,
+     "motion.pose": {
+      "x": -25,
+      "y": -20.5
+     },
+     "prism.pitch": 1765,
+     "prism.pattern": "concentric",
+     "prism.nc": 1.56,
+     "prism.waviness": 0,
+     "prism.coatAlpha": 0.01,
+     "prism.orangePeel": 0,
+     "prism.seed": 291
+    },
+    "view": {
+     "az": 14.77,
+     "el": 14.33,
+     "zoom": 1,
+     "offset": [
+      0,
+      0,
+      0
+     ]
+    },
+    "pose": {
+     "rx": -20.5,
+     "ry": -25,
+     "rz": 0,
+     "flip": false
+    }
+   },
+   "shatter": {
+    "values": {
+     "scene.orbitGlide": 0.56,
+     "scene.autoMotion": false,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "studio.panel.dir": {
+      "x": -0.64,
+      "y": 0.22
+     },
+     "studio.spotA.dir": {
+      "x": -0.6,
+      "y": 0.32
+     },
+     "studio.spotB.dir": {
+      "x": -0.26,
+      "y": -0.48
+     },
+     "studio.spotC.on": true,
+     "studio.spotC.dir": {
+      "x": -0.65,
+      "y": 0.47
+     },
+     "studio.ambient.rims": 1,
+     "studio.ambient.fill": 0.8,
+     "studio.ambient.scrim": 0.5,
+     "studio.ambient.cameraSide": 0.019,
+     "studio.ambient.cameraTexture": 0.85,
+     "studio.ambient.backdrop": 0.84,
+     "studio.ambient.rotation": -61,
+     "studio.flash.size": 11,
+     "studio.flash.distance": 0.33,
+     "grain.amount": 0.07,
+     "card.emboss": "lines",
+     "card.embossPitch": 0.26,
+     "card.border": "foil",
+     "card.edgeSilver": false,
+     "card.wear": 0,
+     "bump.strength": 0.31,
+     "bump.tiling": 2.5,
+     "motion.pose": {
+      "x": -25,
+      "y": -20.5
+     }
+    },
+    "view": {
+     "az": 14.77,
+     "el": 14.33,
+     "zoom": 1,
+     "offset": [
+      0,
+      0,
+      0
+     ]
+    },
+    "pose": {
+     "rx": -20.5,
+     "ry": -25,
+     "rz": 0,
+     "flip": false
+    }
+   },
+   "nebula": {
+    "values": {
+     "scene.orbitGlide": 0.56,
+     "scene.autoMotion": false,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "studio.panel.dir": {
+      "x": -0.64,
+      "y": 0.22
+     },
+     "studio.spotA.dir": {
+      "x": -0.6,
+      "y": 0.32
+     },
+     "studio.spotB.dir": {
+      "x": -0.26,
+      "y": -0.48
+     },
+     "studio.spotC.on": true,
+     "studio.spotC.dir": {
+      "x": -0.65,
+      "y": 0.47
+     },
+     "studio.ambient.rims": 1,
+     "studio.ambient.fill": 0.8,
+     "studio.ambient.scrim": 0.5,
+     "studio.ambient.cameraSide": 0.019,
+     "studio.ambient.cameraTexture": 0.85,
+     "studio.ambient.backdrop": 0.84,
+     "studio.ambient.rotation": -61,
+     "studio.flash.size": 11,
+     "studio.flash.distance": 0.33,
+     "grain.amount": 0.07,
+     "card.emboss": "lines",
+     "card.embossPitch": 0.26,
+     "card.border": "foil",
+     "card.edgeSilver": false,
+     "card.wear": 0,
+     "bump.strength": 0.31,
+     "bump.tiling": 2.5,
+     "motion.pose": {
+      "x": -25,
+      "y": -20.5
+     }
+    },
+    "view": {
+     "az": 14.77,
+     "el": 14.33,
+     "zoom": 1,
+     "offset": [
+      0,
+      0,
+      0
+     ]
+    },
+    "pose": {
+     "rx": -20.5,
+     "ry": -25,
+     "rz": 0,
+     "flip": false
+    }
+   },
+   "sparkle": {
+    "values": {
+     "scene.orbitGlide": 0.56,
+     "scene.autoMotion": false,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "studio.panel.dir": {
+      "x": -0.64,
+      "y": 0.22
+     },
+     "studio.spotA.dir": {
+      "x": -0.6,
+      "y": 0.32
+     },
+     "studio.spotB.dir": {
+      "x": -0.26,
+      "y": -0.48
+     },
+     "studio.spotC.on": true,
+     "studio.spotC.dir": {
+      "x": -0.65,
+      "y": 0.47
+     },
+     "studio.ambient.rims": 1,
+     "studio.ambient.fill": 0.8,
+     "studio.ambient.scrim": 0.5,
+     "studio.ambient.cameraSide": 0.019,
+     "studio.ambient.cameraTexture": 0.85,
+     "studio.ambient.backdrop": 0.84,
+     "studio.ambient.rotation": -61,
+     "studio.flash.size": 11,
+     "studio.flash.distance": 0.33,
+     "grain.amount": 0.07,
+     "card.emboss": "lines",
+     "card.embossPitch": 0.26,
+     "card.border": "foil",
+     "card.edgeSilver": false,
+     "card.wear": 0,
+     "bump.strength": 0.31,
+     "bump.tiling": 2.5,
+     "motion.pose": {
+      "x": -25,
+      "y": -20.5
+     }
+    },
+    "view": {
+     "az": 14.77,
+     "el": 14.33,
+     "zoom": 1,
+     "offset": [
+      0,
+      0,
+      0
+     ]
+    },
+    "pose": {
+     "rx": -20.5,
+     "ry": -25,
+     "rz": 0,
+     "flip": false
+    }
+   },
+   "vortex": {
+    "values": {
+     "scene.orbitGlide": 0.56,
+     "scene.autoMotion": false,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "studio.panel.dir": {
+      "x": -0.64,
+      "y": 0.22
+     },
+     "studio.spotA.dir": {
+      "x": -0.6,
+      "y": 0.32
+     },
+     "studio.spotB.dir": {
+      "x": -0.26,
+      "y": -0.48
+     },
+     "studio.spotC.on": true,
+     "studio.spotC.dir": {
+      "x": -0.65,
+      "y": 0.47
+     },
+     "studio.ambient.rims": 1,
+     "studio.ambient.fill": 0.8,
+     "studio.ambient.scrim": 0.5,
+     "studio.ambient.cameraSide": 0.019,
+     "studio.ambient.cameraTexture": 0.85,
+     "studio.ambient.backdrop": 0.84,
+     "studio.ambient.rotation": -61,
+     "studio.flash.size": 11,
+     "studio.flash.distance": 0.33,
+     "grain.amount": 0.07,
+     "card.emboss": "lines",
+     "card.embossPitch": 0.26,
+     "card.border": "foil",
+     "card.edgeSilver": false,
+     "card.wear": 0,
+     "bump.strength": 0.31,
+     "bump.tiling": 2.5,
+     "motion.pose": {
+      "x": -25,
+      "y": -20.5
+     }
+    },
+    "view": {
+     "az": 14.77,
+     "el": 14.33,
+     "zoom": 1,
+     "offset": [
+      0,
+      0,
+      0
+     ]
+    },
+    "pose": {
+     "rx": -20.5,
+     "ry": -25,
+     "rz": 0,
+     "flip": false
+    }
+   },
+   "volume": {
+    "values": {
+     "scene.orbitGlide": 0.56,
+     "scene.autoMotion": false,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "studio.panel.dir": {
+      "x": -0.64,
+      "y": 0.22
+     },
+     "studio.spotA.dir": {
+      "x": -0.6,
+      "y": 0.32
+     },
+     "studio.spotB.dir": {
+      "x": -0.26,
+      "y": -0.48
+     },
+     "studio.spotC.on": true,
+     "studio.spotC.dir": {
+      "x": -0.65,
+      "y": 0.47
+     },
+     "studio.ambient.rims": 1,
+     "studio.ambient.fill": 0.8,
+     "studio.ambient.scrim": 0.5,
+     "studio.ambient.cameraSide": 0.019,
+     "studio.ambient.cameraTexture": 0.85,
+     "studio.ambient.backdrop": 0.84,
+     "studio.ambient.rotation": -61,
+     "studio.flash.size": 11,
+     "studio.flash.distance": 0.33,
+     "grain.amount": 0.07,
+     "card.emboss": "lines",
+     "card.embossPitch": 0.26,
+     "card.border": "foil",
+     "card.edgeSilver": false,
+     "card.wear": 0,
+     "bump.strength": 0.31,
+     "bump.tiling": 2.5
+    },
+    "view": {
+     "az": 0,
+     "el": 0,
+     "zoom": 1,
+     "offset": [
+      0,
+      0,
+      0
+     ]
+    },
+    "pose": {
+     "rx": 0,
+     "ry": 0,
+     "rz": 0,
+     "flip": false
+    }
+   }
+  }
+ },
+ "object": {
+  "title": "3D object",
+  "material": "nebula",
+  "quality": "low",
+  "surfaces": {
+   "prism": {
+    "values": {
+     "scene.object": "model",
+     "scene.orbitGlide": 0.67,
+     "scene.autoMotion": false,
+     "dof.on": true,
+     "dof.fstop": "2.2",
+     "dof.focus": "point",
+     "dof.point": {
+      "x": 0.41,
+      "y": 0.178
+     },
+     "dof.pointZ": 0.175,
+     "dof.distance": 138,
+     "dof.offset": 1,
+     "dof.lens": 200,
+     "dof.blades": "5",
+     "dof.bladeCurve": 0.48,
+     "dof.bladeAngle": 6,
+     "dof.catsEye": 0.62,
+     "dof.rim": 0.24,
+     "dof.loca": 0.37,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "object.crumple": 0.28,
+     "object.seed": 999,
+     "studio.panel.dir": {
+      "x": 0.03,
+      "y": -0.07
+     },
+     "studio.spotA.dir": {
+      "x": -0.55,
+      "y": 1
+     },
+     "studio.spotA.size": 3.2,
+     "studio.spotA.radiance": 1440,
+     "studio.spotB.dir": {
+      "x": -0.4,
+      "y": 0.95
+     },
+     "studio.spotB.size": 2.2,
+     "studio.spotB.radiance": 1720,
+     "studio.spotB.distance": 1.85,
+     "studio.spotC.on": true,
+     "studio.spotC.dir": {
+      "x": 0.88,
+      "y": -0.53
+     },
+     "studio.spotC.size": 0.2,
+     "studio.spotC.radiance": 1300,
+     "studio.spotC.distance": 0.7,
+     "studio.ambient.rims": 0.9,
+     "studio.ambient.fill": 0.45,
+     "studio.ambient.scrim": 2,
+     "studio.ambient.cameraSide": 0.019,
+     "studio.ambient.cameraTexture": 0.5,
+     "studio.ambient.backdrop": 0.27,
+     "studio.ambient.rotation": 122,
+     "studio.flash.size": 7.5,
+     "studio.flash.distance": 0.33,
+     "display.ev": 0.8,
+     "display.glare": 0.075,
+     "grain.amount": 0.07,
+     "bump.strength": 1.35,
+     "motion.pose": {
+      "x": -27,
+      "y": 2.5
+     },
+     "prism.pitch": 1765,
+     "prism.pattern": "concentric",
+     "prism.nc": 1.56,
+     "prism.waviness": 0,
+     "prism.coatAlpha": 0.01,
+     "prism.orangePeel": 0,
+     "prism.seed": 291
+    },
+    "view": {
+     "az": 10.68,
+     "el": 13.82,
+     "zoom": 0.899,
+     "offset": [
+      -0.83,
+      5.99,
+      -1.43
+     ]
+    },
+    "pose": {
+     "rx": 2.5,
+     "ry": -27,
+     "rz": 0,
+     "flip": false
+    }
+   },
+   "shatter": {
+    "values": {
+     "scene.object": "model",
+     "scene.orbitGlide": 0.67,
+     "scene.autoMotion": false,
+     "dof.on": true,
+     "dof.fstop": "2.2",
+     "dof.focus": "point",
+     "dof.point": {
+      "x": 0.41,
+      "y": 0.178
+     },
+     "dof.pointZ": 0.175,
+     "dof.distance": 138,
+     "dof.offset": 1,
+     "dof.lens": 200,
+     "dof.blades": "5",
+     "dof.bladeCurve": 0.48,
+     "dof.bladeAngle": 6,
+     "dof.catsEye": 0.62,
+     "dof.rim": 0.24,
+     "dof.loca": 0.37,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "object.crumple": 0.28,
+     "object.seed": 999,
+     "studio.panel.dir": {
+      "x": 0.03,
+      "y": -0.07
+     },
+     "studio.spotA.dir": {
+      "x": -0.55,
+      "y": 1
+     },
+     "studio.spotA.size": 3.2,
+     "studio.spotA.radiance": 1440,
+     "studio.spotB.dir": {
+      "x": -0.4,
+      "y": 0.95
+     },
+     "studio.spotB.size": 2.2,
+     "studio.spotB.radiance": 1720,
+     "studio.spotB.distance": 1.85,
+     "studio.spotC.on": true,
+     "studio.spotC.dir": {
+      "x": 0.88,
+      "y": -0.53
+     },
+     "studio.spotC.size": 0.2,
+     "studio.spotC.radiance": 1300,
+     "studio.spotC.distance": 0.7,
+     "studio.ambient.rims": 0.9,
+     "studio.ambient.fill": 0.45,
+     "studio.ambient.scrim": 2,
+     "studio.ambient.cameraSide": 0.019,
+     "studio.ambient.cameraTexture": 0.5,
+     "studio.ambient.backdrop": 0.27,
+     "studio.ambient.rotation": 122,
+     "studio.flash.size": 7.5,
+     "studio.flash.distance": 0.33,
+     "display.ev": 0.8,
+     "display.glare": 0.075,
+     "grain.amount": 0.07,
+     "bump.strength": 1.35,
+     "motion.pose": {
+      "x": -27,
+      "y": 2.5
+     }
+    },
+    "view": {
+     "az": 10.68,
+     "el": 13.82,
+     "zoom": 0.899,
+     "offset": [
+      -0.83,
+      5.99,
+      -1.43
+     ]
+    },
+    "pose": {
+     "rx": 2.5,
+     "ry": -27,
+     "rz": 0,
+     "flip": false
+    }
+   },
+   "nebula": {
+    "values": {
+     "scene.object": "model",
+     "scene.orbitGlide": 0.67,
+     "scene.autoMotion": false,
+     "dof.on": true,
+     "dof.fstop": "2.2",
+     "dof.focus": "point",
+     "dof.point": {
+      "x": 0.41,
+      "y": 0.178
+     },
+     "dof.pointZ": 0.175,
+     "dof.distance": 138,
+     "dof.offset": 1,
+     "dof.lens": 200,
+     "dof.blades": "5",
+     "dof.bladeCurve": 0.48,
+     "dof.bladeAngle": 6,
+     "dof.catsEye": 0.62,
+     "dof.rim": 0.24,
+     "dof.loca": 0.37,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "object.crumple": 0.28,
+     "object.seed": 999,
+     "studio.panel.dir": {
+      "x": 0.03,
+      "y": -0.07
+     },
+     "studio.spotA.dir": {
+      "x": -0.55,
+      "y": 1
+     },
+     "studio.spotA.size": 3.2,
+     "studio.spotA.radiance": 1440,
+     "studio.spotB.dir": {
+      "x": -0.4,
+      "y": 0.95
+     },
+     "studio.spotB.size": 2.2,
+     "studio.spotB.radiance": 1720,
+     "studio.spotB.distance": 1.85,
+     "studio.spotC.on": true,
+     "studio.spotC.dir": {
+      "x": 0.88,
+      "y": -0.53
+     },
+     "studio.spotC.size": 0.2,
+     "studio.spotC.radiance": 1300,
+     "studio.spotC.distance": 0.7,
+     "studio.ambient.rims": 0.9,
+     "studio.ambient.fill": 0.45,
+     "studio.ambient.scrim": 2,
+     "studio.ambient.cameraSide": 0.019,
+     "studio.ambient.cameraTexture": 0.5,
+     "studio.ambient.backdrop": 0.27,
+     "studio.ambient.rotation": 122,
+     "studio.flash.size": 7.5,
+     "studio.flash.distance": 0.33,
+     "display.ev": 0.8,
+     "display.glare": 0.075,
+     "grain.amount": 0.07,
+     "bump.strength": 1.35,
+     "motion.pose": {
+      "x": -27,
+      "y": 2.5
+     },
+     "nebula.size": 140,
+     "nebula.shape": "round",
+     "nebula.tilt": 2.7,
+     "nebula.curv": 0.05,
+     "nebula.coverage": 0.57,
+     "nebula.pitchMin": 1180,
+     "nebula.pitchMax": 870,
+     "nebula.depth": 146,
+     "nebula.starDensity": 30,
+     "nebula.baseColor": "#22155f",
+     "nebula.nc": 1.65,
+     "nebula.tintEdge": 516,
+     "nebula.tintWidth": 150,
+     "nebula.tintFloor": 0.07,
+     "nebula.waviness": 0.57,
+     "nebula.coatAlpha": 0.01,
+     "nebula.orangePeel": 1.2
+    },
+    "view": {
+     "az": 10.68,
+     "el": 13.82,
+     "zoom": 0.899,
+     "offset": [
+      -0.83,
+      5.99,
+      -1.43
+     ]
+    },
+    "pose": {
+     "rx": 2.5,
+     "ry": -27,
+     "rz": 0,
+     "flip": false
+    }
+   },
+   "sparkle": {
+    "values": {
+     "scene.object": "model",
+     "scene.orbitGlide": 0.67,
+     "scene.autoMotion": false,
+     "dof.on": true,
+     "dof.fstop": "2.2",
+     "dof.focus": "point",
+     "dof.point": {
+      "x": 0.41,
+      "y": 0.178
+     },
+     "dof.pointZ": 0.175,
+     "dof.distance": 138,
+     "dof.offset": 1,
+     "dof.lens": 200,
+     "dof.blades": "5",
+     "dof.bladeCurve": 0.48,
+     "dof.bladeAngle": 6,
+     "dof.catsEye": 0.62,
+     "dof.rim": 0.24,
+     "dof.loca": 0.37,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "object.crumple": 0.28,
+     "object.seed": 999,
+     "studio.panel.dir": {
+      "x": 0.03,
+      "y": -0.07
+     },
+     "studio.spotA.dir": {
+      "x": -0.55,
+      "y": 1
+     },
+     "studio.spotA.size": 3.2,
+     "studio.spotA.radiance": 1440,
+     "studio.spotB.dir": {
+      "x": -0.4,
+      "y": 0.95
+     },
+     "studio.spotB.size": 2.2,
+     "studio.spotB.radiance": 1720,
+     "studio.spotB.distance": 1.85,
+     "studio.spotC.on": true,
+     "studio.spotC.dir": {
+      "x": 0.88,
+      "y": -0.53
+     },
+     "studio.spotC.size": 0.2,
+     "studio.spotC.radiance": 1300,
+     "studio.spotC.distance": 0.7,
+     "studio.ambient.rims": 0.9,
+     "studio.ambient.fill": 0.45,
+     "studio.ambient.scrim": 2,
+     "studio.ambient.cameraSide": 0.019,
+     "studio.ambient.cameraTexture": 0.5,
+     "studio.ambient.backdrop": 0.27,
+     "studio.ambient.rotation": 122,
+     "studio.flash.size": 7.5,
+     "studio.flash.distance": 0.33,
+     "display.ev": 0.8,
+     "display.glare": 0.075,
+     "grain.amount": 0.07,
+     "bump.strength": 1.35,
+     "motion.pose": {
+      "x": -27,
+      "y": 2.5
+     },
+     "sparkle.size": 215,
+     "sparkle.coverage": 0.8
+    },
+    "view": {
+     "az": 10.68,
+     "el": 13.82,
+     "zoom": 0.899,
+     "offset": [
+      -0.83,
+      5.99,
+      -1.43
+     ]
+    },
+    "pose": {
+     "rx": 2.5,
+     "ry": -27,
+     "rz": 0,
+     "flip": false
+    }
+   },
+   "vortex": {
+    "values": {
+     "scene.object": "model",
+     "scene.orbitGlide": 0.67,
+     "scene.autoMotion": false,
+     "dof.on": true,
+     "dof.fstop": "2.2",
+     "dof.focus": "point",
+     "dof.point": {
+      "x": 0.41,
+      "y": 0.178
+     },
+     "dof.pointZ": 0.175,
+     "dof.distance": 138,
+     "dof.offset": 1,
+     "dof.lens": 200,
+     "dof.blades": "5",
+     "dof.bladeCurve": 0.48,
+     "dof.bladeAngle": 6,
+     "dof.catsEye": 0.62,
+     "dof.rim": 0.24,
+     "dof.loca": 0.37,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "object.crumple": 0.28,
+     "object.seed": 999,
+     "studio.panel.dir": {
+      "x": 0.03,
+      "y": -0.07
+     },
+     "studio.spotA.dir": {
+      "x": -0.55,
+      "y": 1
+     },
+     "studio.spotA.size": 3.2,
+     "studio.spotA.radiance": 1440,
+     "studio.spotB.dir": {
+      "x": -0.4,
+      "y": 0.95
+     },
+     "studio.spotB.size": 2.2,
+     "studio.spotB.radiance": 1720,
+     "studio.spotB.distance": 1.85,
+     "studio.spotC.on": true,
+     "studio.spotC.dir": {
+      "x": 0.88,
+      "y": -0.53
+     },
+     "studio.spotC.size": 0.2,
+     "studio.spotC.radiance": 1300,
+     "studio.spotC.distance": 0.7,
+     "studio.ambient.rims": 0.9,
+     "studio.ambient.fill": 0.45,
+     "studio.ambient.scrim": 2,
+     "studio.ambient.cameraSide": 0.019,
+     "studio.ambient.cameraTexture": 0.5,
+     "studio.ambient.backdrop": 0.27,
+     "studio.ambient.rotation": 122,
+     "studio.flash.size": 7.5,
+     "studio.flash.distance": 0.33,
+     "display.ev": 0.8,
+     "display.glare": 0.075,
+     "grain.amount": 0.07,
+     "bump.strength": 1.35,
+     "motion.pose": {
+      "x": -27,
+      "y": 2.5
+     }
+    },
+    "view": {
+     "az": 10.68,
+     "el": 13.82,
+     "zoom": 0.899,
+     "offset": [
+      -0.83,
+      5.99,
+      -1.43
+     ]
+    },
+    "pose": {
+     "rx": 2.5,
+     "ry": -27,
+     "rz": 0,
+     "flip": false
+    }
+   },
+   "volume": {
+    "values": {
+     "scene.object": "model",
+     "scene.orbitGlide": 0.67,
+     "scene.autoMotion": false,
+     "dof.on": true,
+     "dof.fstop": "2.2",
+     "dof.focus": "point",
+     "dof.point": {
+      "x": 0.41,
+      "y": 0.178
+     },
+     "dof.pointZ": 0.175,
+     "dof.distance": 138,
+     "dof.offset": 1,
+     "dof.lens": 200,
+     "dof.blades": "5",
+     "dof.bladeCurve": 0.48,
+     "dof.bladeAngle": 6,
+     "dof.catsEye": 0.62,
+     "dof.rim": 0.24,
+     "dof.loca": 0.37,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "object.crumple": 0.28,
+     "object.seed": 999,
+     "studio.panel.dir": {
+      "x": 0.03,
+      "y": -0.07
+     },
+     "studio.spotA.dir": {
+      "x": -0.55,
+      "y": 1
+     },
+     "studio.spotA.size": 3.2,
+     "studio.spotA.radiance": 1440,
+     "studio.spotB.dir": {
+      "x": -0.4,
+      "y": 0.95
+     },
+     "studio.spotB.size": 2.2,
+     "studio.spotB.radiance": 1720,
+     "studio.spotB.distance": 1.85,
+     "studio.spotC.on": true,
+     "studio.spotC.dir": {
+      "x": 0.88,
+      "y": -0.53
+     },
+     "studio.spotC.size": 0.2,
+     "studio.spotC.radiance": 1300,
+     "studio.spotC.distance": 0.7,
+     "studio.ambient.rims": 0.9,
+     "studio.ambient.fill": 0.45,
+     "studio.ambient.scrim": 2,
+     "studio.ambient.cameraSide": 0.019,
+     "studio.ambient.cameraTexture": 0.5,
+     "studio.ambient.backdrop": 0.27,
+     "studio.ambient.rotation": 122,
+     "studio.flash.size": 7.5,
+     "studio.flash.distance": 0.33,
+     "display.ev": 0.8,
+     "display.glare": 0.075,
+     "grain.amount": 0.07,
+     "bump.strength": 1.35,
+     "motion.pose": {
+      "x": -27,
+      "y": 2.5
+     }
+    },
+    "view": {
+     "az": 10.68,
+     "el": 13.82,
+     "zoom": 0.899,
+     "offset": [
+      -0.83,
+      5.99,
+      -1.43
+     ]
+    },
+    "pose": {
+     "rx": 2.5,
+     "ry": -27,
+     "rz": 0,
+     "flip": false
+    }
+   }
+  }
+ },
+ "image": {
+  "title": "Image card",
+  "material": "emboss",
+  "quality": "medium",
+  "surfaces": {
+   "emboss": {
+    "values": {
+     "scene.orbitGlide": 0.67,
+     "scene.autoMotion": false,
+     "dof.fstop": "5.6",
+     "dof.focus": "point",
+     "dof.point": {
+      "x": 0.82,
+      "y": 0.079
+     },
+     "dof.pointZ": 0.284,
+     "dof.distance": 138,
+     "dof.offset": 1,
+     "dof.lens": 51,
+     "dof.blades": "5",
+     "dof.bladeCurve": 0.48,
+     "dof.bladeAngle": 6,
+     "dof.catsEye": 0.62,
+     "dof.rim": 0.24,
+     "dof.loca": 0.37,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "studio.panel.dir": {
+      "x": -0.3,
+      "y": -0.7
+     },
+     "studio.panel.width": 22,
+     "studio.panel.length": 8,
+     "studio.panel.radiance": 6,
+     "studio.panel.distance": 0.45,
+     "studio.spotA.dir": {
+      "x": 0.42,
+      "y": 0.33
+     },
+     "studio.spotA.size": 2,
+     "studio.spotA.radiance": 1440,
+     "studio.spotB.dir": {
+      "x": -0.4,
+      "y": 0.95
+     },
+     "studio.spotB.size": 0.2,
+     "studio.spotB.radiance": 1720,
+     "studio.spotB.distance": 1.85,
+     "studio.spotC.on": true,
+     "studio.spotC.dir": {
+      "x": 0.88,
+      "y": -0.53
+     },
+     "studio.spotC.size": 0.2,
+     "studio.spotC.radiance": 2800,
+     "studio.spotC.distance": 0.7,
+     "studio.ambient.rims": 0.9,
+     "studio.ambient.fill": 0.45,
+     "studio.ambient.scrim": 0.35,
+     "studio.ambient.cameraSide": 0.019,
+     "studio.ambient.cameraTexture": 0.5,
+     "studio.ambient.backdrop": 0.27,
+     "studio.ambient.rotation": -28,
+     "studio.flash.size": 7.5,
+     "studio.flash.distance": 0.33,
+     "display.ev": 0.8,
+     "display.glare": 0.075,
+     "grain.amount": 0.07,
+     "card.bow": 2,
+     "bump.strength": 1.35,
+     "motion.pose": {
+      "x": -0.5,
+      "y": 0
+     },
+     "emboss.logo": "/defaults/image/b214de92.svg",
+     "emboss.x": 25.6,
+     "emboss.y": 54.8,
+     "emboss.width": 40.8,
+     "emboss.height": 15,
+     "emboss.shoulder": 0.1,
+     "emboss.profile": "bevel",
+     "emboss.puff": 0.3,
+     "emboss.foil": "concentric",
+     "emboss.pitch": 1200,
+     "emboss.grooveAngle": 149,
+     "emboss.foilCoverage": 1,
+     "emboss.edgeBreakup": 0.31,
+     "emboss.showThrough": 0,
+     "emboss.gloss": 0,
+     "emboss.sparkleSize": 380,
+     "emboss.foilBump": 0.29,
+     "emboss.textureStrength": 0,
+     "emboss.fibreScale": 1.32,
+     "emboss.thickness": 0.3,
+     "emboss.doc": "{\"v\":1,\"e\":[{\"i\":\"e1\",\"t\":\"f\",\"n\":\"Logo 1\",\"p\":{\"logo\":\"/defaults/image/b214de92.svg\",\"x\":25.6,\"y\":54.8,\"width\":40.8,\"height\":15,\"shoulder\":0.1,\"profile\":\"bevel\",\"puff\":0.3,\"foil\":\"concentric\",\"pitch\":860,\"grooveAngle\":110,\"foilCoverage\":1,\"edgeBreakup\":0.23,\"showThrough\":0,\"gloss\":0.69,\"sparkleSize\":225,\"foilBump\":0.29}},{\"i\":\"e2\",\"t\":\"h\",\"n\":\"Sticker 1\",\"p\":{\"shape\":\"circle\",\"x\":46.4,\"y\":18.1,\"width\":24,\"foilBump\":0.57,\"holo.subject\":\"emblem\",\"holo.size\":78,\"holo.depth\":-0.5,\"holo.yaw\":-5,\"holo.recLight\":{\"x\":-0.23,\"y\":0.69},\"holo.speckle\":0.3,\"holo.backdropDepth\":-155,\"holo.colour\":547,\"holo.views\":16}}]}"
+    },
+    "view": {
+     "az": 13.14,
+     "el": -6.89,
+     "zoom": 0.9489,
+     "offset": [
+      -5.17,
+      1.45,
+      3.08
+     ]
+    },
+    "pose": {
+     "rx": 0,
+     "ry": -0.5,
+     "rz": 0,
+     "flip": false
+    }
+   }
+  }
+ },
+ "cloth": {
+  "title": "Holo cloth",
+  "material": "emboss",
+  "quality": "medium",
+  "surfaces": {
+   "prism": {
+    "values": {
+     "scene.orbitGlide": 0.67,
+     "scene.autoMotion": false,
+     "dof.on": true,
+     "dof.fstop": "5.6",
+     "dof.focus": "point",
+     "dof.point": {
+      "x": -0.184,
+      "y": 0.555
+     },
+     "dof.pointZ": -0.067,
+     "dof.distance": 138,
+     "dof.offset": -3.5,
+     "dof.lens": 86,
+     "dof.blades": "5",
+     "dof.bladeCurve": 0.48,
+     "dof.bladeAngle": 6,
+     "dof.catsEye": 0.62,
+     "dof.rim": 0.24,
+     "dof.loca": 0.37,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "object.clothSmoothing": 0,
+     "object.clothShadow": 0.53,
+     "studio.panel.dir": {
+      "x": -0.39,
+      "y": -0.37
+     },
+     "studio.panel.width": 22,
+     "studio.panel.length": 8,
+     "studio.panel.radiance": 6,
+     "studio.panel.distance": 0.45,
+     "studio.spotA.dir": {
+      "x": -0.64,
+      "y": 0.25
+     },
+     "studio.spotA.size": 2.7,
+     "studio.spotA.radiance": 1560,
+     "studio.spotA.distance": 0.85,
+     "studio.spotB.dir": {
+      "x": -0.4,
+      "y": 0.95
+     },
+     "studio.spotB.size": 0.2,
+     "studio.spotB.radiance": 1720,
+     "studio.spotB.distance": 1.85,
+     "studio.spotC.on": true,
+     "studio.spotC.dir": {
+      "x": 0.88,
+      "y": -0.53
+     },
+     "studio.spotC.size": 0.2,
+     "studio.spotC.radiance": 2800,
+     "studio.spotC.distance": 0.7,
+     "studio.ambient.rims": 0.9,
+     "studio.ambient.fill": 0.45,
+     "studio.ambient.scrim": 0.35,
+     "studio.ambient.cameraSide": 0.019,
+     "studio.ambient.cameraTexture": 0.5,
+     "studio.ambient.backdrop": 0.27,
+     "studio.ambient.rotation": -28,
+     "studio.flash.size": 7.5,
+     "studio.flash.distance": 0.33,
+     "display.ev": 0.8,
+     "display.glare": 0.075,
+     "grain.amount": 0.07,
+     "bump.strength": 1.35,
+     "motion.pose": {
+      "x": 6,
+      "y": -0.5
+     },
+     "prism.pitch": 1350,
+     "prism.grooveAngle": 86,
+     "prism.pattern": "concentric",
+     "prism.depth": 177,
+     "prism.fan": 15.7,
+     "prism.sigTheta": 2.35,
+     "prism.sigPitch": 2,
+     "prism.nc": 1.56,
+     "prism.waviness": 0,
+     "prism.coatAlpha": 0.01,
+     "prism.orangePeel": 0,
+     "prism.seed": 291
+    },
+    "view": {
+     "az": 13.3,
+     "el": -7.65,
+     "zoom": 0.7543,
+     "offset": [
+      -1.77,
+      3.43,
+      2.97
+     ]
+    },
+    "pose": {
+     "rx": -0.5,
+     "ry": 6,
+     "rz": 0,
+     "flip": false
+    }
+   },
+   "shatter": {
+    "values": {
+     "scene.orbitGlide": 0.67,
+     "scene.autoMotion": false,
+     "dof.on": true,
+     "dof.fstop": "5.6",
+     "dof.focus": "point",
+     "dof.point": {
+      "x": -0.184,
+      "y": 0.555
+     },
+     "dof.pointZ": -0.067,
+     "dof.distance": 138,
+     "dof.offset": -3.5,
+     "dof.lens": 86,
+     "dof.blades": "5",
+     "dof.bladeCurve": 0.48,
+     "dof.bladeAngle": 6,
+     "dof.catsEye": 0.62,
+     "dof.rim": 0.24,
+     "dof.loca": 0.37,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "object.clothSmoothing": 0,
+     "object.clothShadow": 0.53,
+     "studio.panel.dir": {
+      "x": -0.39,
+      "y": -0.37
+     },
+     "studio.panel.width": 22,
+     "studio.panel.length": 8,
+     "studio.panel.radiance": 6,
+     "studio.panel.distance": 0.45,
+     "studio.spotA.dir": {
+      "x": -0.64,
+      "y": 0.25
+     },
+     "studio.spotA.size": 2.7,
+     "studio.spotA.radiance": 1560,
+     "studio.spotA.distance": 0.85,
+     "studio.spotB.dir": {
+      "x": -0.4,
+      "y": 0.95
+     },
+     "studio.spotB.size": 0.2,
+     "studio.spotB.radiance": 1720,
+     "studio.spotB.distance": 1.85,
+     "studio.spotC.on": true,
+     "studio.spotC.dir": {
+      "x": 0.88,
+      "y": -0.53
+     },
+     "studio.spotC.size": 0.2,
+     "studio.spotC.radiance": 2800,
+     "studio.spotC.distance": 0.7,
+     "studio.ambient.rims": 0.9,
+     "studio.ambient.fill": 0.45,
+     "studio.ambient.scrim": 0.35,
+     "studio.ambient.cameraSide": 0.019,
+     "studio.ambient.cameraTexture": 0.5,
+     "studio.ambient.backdrop": 0.27,
+     "studio.ambient.rotation": -28,
+     "studio.flash.size": 7.5,
+     "studio.flash.distance": 0.33,
+     "display.ev": 0.8,
+     "display.glare": 0.075,
+     "grain.amount": 0.07,
+     "bump.strength": 1.35,
+     "motion.pose": {
+      "x": 6,
+      "y": -0.5
+     }
+    },
+    "view": {
+     "az": 13.3,
+     "el": -7.65,
+     "zoom": 0.7543,
+     "offset": [
+      -1.77,
+      3.43,
+      2.97
+     ]
+    },
+    "pose": {
+     "rx": -0.5,
+     "ry": 6,
+     "rz": 0,
+     "flip": false
+    }
+   },
+   "nebula": {
+    "values": {
+     "scene.orbitGlide": 0.67,
+     "scene.autoMotion": false,
+     "dof.on": true,
+     "dof.fstop": "5.6",
+     "dof.focus": "point",
+     "dof.point": {
+      "x": -0.184,
+      "y": 0.555
+     },
+     "dof.pointZ": -0.067,
+     "dof.distance": 138,
+     "dof.offset": -3.5,
+     "dof.lens": 86,
+     "dof.blades": "5",
+     "dof.bladeCurve": 0.48,
+     "dof.bladeAngle": 6,
+     "dof.catsEye": 0.62,
+     "dof.rim": 0.24,
+     "dof.loca": 0.37,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "object.clothSmoothing": 0,
+     "object.clothShadow": 0.53,
+     "studio.panel.dir": {
+      "x": -0.39,
+      "y": -0.37
+     },
+     "studio.panel.width": 22,
+     "studio.panel.length": 8,
+     "studio.panel.radiance": 6,
+     "studio.panel.distance": 0.45,
+     "studio.spotA.dir": {
+      "x": -0.64,
+      "y": 0.25
+     },
+     "studio.spotA.size": 2.7,
+     "studio.spotA.radiance": 1560,
+     "studio.spotA.distance": 0.85,
+     "studio.spotB.dir": {
+      "x": -0.4,
+      "y": 0.95
+     },
+     "studio.spotB.size": 0.2,
+     "studio.spotB.radiance": 1720,
+     "studio.spotB.distance": 1.85,
+     "studio.spotC.on": true,
+     "studio.spotC.dir": {
+      "x": 0.88,
+      "y": -0.53
+     },
+     "studio.spotC.size": 0.2,
+     "studio.spotC.radiance": 2800,
+     "studio.spotC.distance": 0.7,
+     "studio.ambient.rims": 0.9,
+     "studio.ambient.fill": 0.45,
+     "studio.ambient.scrim": 0.35,
+     "studio.ambient.cameraSide": 0.019,
+     "studio.ambient.cameraTexture": 0.5,
+     "studio.ambient.backdrop": 0.27,
+     "studio.ambient.rotation": -28,
+     "studio.flash.size": 7.5,
+     "studio.flash.distance": 0.33,
+     "display.ev": 0.8,
+     "display.glare": 0.075,
+     "grain.amount": 0.07,
+     "bump.strength": 1.35,
+     "motion.pose": {
+      "x": 6,
+      "y": -0.5
+     },
+     "nebula.size": 140,
+     "nebula.shape": "round",
+     "nebula.tilt": 2.7,
+     "nebula.curv": 0.05,
+     "nebula.coverage": 0.57,
+     "nebula.pitchMin": 1180,
+     "nebula.pitchMax": 870,
+     "nebula.depth": 146,
+     "nebula.starDensity": 30,
+     "nebula.baseColor": "#22155f",
+     "nebula.nc": 1.65,
+     "nebula.tintEdge": 516,
+     "nebula.tintWidth": 150,
+     "nebula.tintFloor": 0.07,
+     "nebula.waviness": 0.57,
+     "nebula.coatAlpha": 0.01,
+     "nebula.orangePeel": 1.2
+    },
+    "view": {
+     "az": 13.3,
+     "el": -7.65,
+     "zoom": 0.7543,
+     "offset": [
+      -1.77,
+      3.43,
+      2.97
+     ]
+    },
+    "pose": {
+     "rx": -0.5,
+     "ry": 6,
+     "rz": 0,
+     "flip": false
+    }
+   },
+   "sparkle": {
+    "values": {
+     "scene.orbitGlide": 0.67,
+     "scene.autoMotion": false,
+     "dof.on": true,
+     "dof.fstop": "5.6",
+     "dof.focus": "point",
+     "dof.point": {
+      "x": -0.184,
+      "y": 0.555
+     },
+     "dof.pointZ": -0.067,
+     "dof.distance": 138,
+     "dof.offset": -3.5,
+     "dof.lens": 86,
+     "dof.blades": "5",
+     "dof.bladeCurve": 0.48,
+     "dof.bladeAngle": 6,
+     "dof.catsEye": 0.62,
+     "dof.rim": 0.24,
+     "dof.loca": 0.37,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "object.clothSmoothing": 0,
+     "object.clothShadow": 0.53,
+     "studio.panel.dir": {
+      "x": -0.39,
+      "y": -0.37
+     },
+     "studio.panel.width": 22,
+     "studio.panel.length": 8,
+     "studio.panel.radiance": 6,
+     "studio.panel.distance": 0.45,
+     "studio.spotA.dir": {
+      "x": -0.64,
+      "y": 0.25
+     },
+     "studio.spotA.size": 2.7,
+     "studio.spotA.radiance": 1560,
+     "studio.spotA.distance": 0.85,
+     "studio.spotB.dir": {
+      "x": -0.4,
+      "y": 0.95
+     },
+     "studio.spotB.size": 0.2,
+     "studio.spotB.radiance": 1720,
+     "studio.spotB.distance": 1.85,
+     "studio.spotC.on": true,
+     "studio.spotC.dir": {
+      "x": 0.88,
+      "y": -0.53
+     },
+     "studio.spotC.size": 0.2,
+     "studio.spotC.radiance": 2800,
+     "studio.spotC.distance": 0.7,
+     "studio.ambient.rims": 0.9,
+     "studio.ambient.fill": 0.45,
+     "studio.ambient.scrim": 0.35,
+     "studio.ambient.cameraSide": 0.019,
+     "studio.ambient.cameraTexture": 0.5,
+     "studio.ambient.backdrop": 0.27,
+     "studio.ambient.rotation": -28,
+     "studio.flash.size": 7.5,
+     "studio.flash.distance": 0.33,
+     "display.ev": 0.8,
+     "display.glare": 0.075,
+     "grain.amount": 0.07,
+     "bump.strength": 1.35,
+     "motion.pose": {
+      "x": 6,
+      "y": -0.5
+     },
+     "sparkle.size": 215,
+     "sparkle.coverage": 0.8
+    },
+    "view": {
+     "az": 13.3,
+     "el": -7.65,
+     "zoom": 0.7543,
+     "offset": [
+      -1.77,
+      3.43,
+      2.97
+     ]
+    },
+    "pose": {
+     "rx": -0.5,
+     "ry": 6,
+     "rz": 0,
+     "flip": false
+    }
+   },
+   "vortex": {
+    "values": {
+     "scene.orbitGlide": 0.67,
+     "scene.autoMotion": false,
+     "dof.on": true,
+     "dof.fstop": "5.6",
+     "dof.focus": "point",
+     "dof.point": {
+      "x": -0.184,
+      "y": 0.555
+     },
+     "dof.pointZ": -0.067,
+     "dof.distance": 138,
+     "dof.offset": -3.5,
+     "dof.lens": 86,
+     "dof.blades": "5",
+     "dof.bladeCurve": 0.48,
+     "dof.bladeAngle": 6,
+     "dof.catsEye": 0.62,
+     "dof.rim": 0.24,
+     "dof.loca": 0.37,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "object.clothSmoothing": 0,
+     "object.clothShadow": 0.53,
+     "studio.panel.dir": {
+      "x": -0.39,
+      "y": -0.37
+     },
+     "studio.panel.width": 22,
+     "studio.panel.length": 8,
+     "studio.panel.radiance": 6,
+     "studio.panel.distance": 0.45,
+     "studio.spotA.dir": {
+      "x": -0.64,
+      "y": 0.25
+     },
+     "studio.spotA.size": 2.7,
+     "studio.spotA.radiance": 1560,
+     "studio.spotA.distance": 0.85,
+     "studio.spotB.dir": {
+      "x": -0.4,
+      "y": 0.95
+     },
+     "studio.spotB.size": 0.2,
+     "studio.spotB.radiance": 1720,
+     "studio.spotB.distance": 1.85,
+     "studio.spotC.on": true,
+     "studio.spotC.dir": {
+      "x": 0.88,
+      "y": -0.53
+     },
+     "studio.spotC.size": 0.2,
+     "studio.spotC.radiance": 2800,
+     "studio.spotC.distance": 0.7,
+     "studio.ambient.rims": 0.9,
+     "studio.ambient.fill": 0.45,
+     "studio.ambient.scrim": 0.35,
+     "studio.ambient.cameraSide": 0.019,
+     "studio.ambient.cameraTexture": 0.5,
+     "studio.ambient.backdrop": 0.27,
+     "studio.ambient.rotation": -28,
+     "studio.flash.size": 7.5,
+     "studio.flash.distance": 0.33,
+     "display.ev": 0.8,
+     "display.glare": 0.075,
+     "grain.amount": 0.07,
+     "bump.strength": 1.35,
+     "motion.pose": {
+      "x": 6,
+      "y": -0.5
+     }
+    },
+    "view": {
+     "az": 13.3,
+     "el": -7.65,
+     "zoom": 0.7543,
+     "offset": [
+      -1.77,
+      3.43,
+      2.97
+     ]
+    },
+    "pose": {
+     "rx": -0.5,
+     "ry": 6,
+     "rz": 0,
+     "flip": false
+    }
+   },
+   "volume": {
+    "values": {
+     "scene.orbitGlide": 0.67,
+     "scene.autoMotion": false,
+     "dof.on": true,
+     "dof.fstop": "5.6",
+     "dof.focus": "point",
+     "dof.point": {
+      "x": -0.184,
+      "y": 0.555
+     },
+     "dof.pointZ": -0.067,
+     "dof.distance": 138,
+     "dof.offset": -3.5,
+     "dof.lens": 86,
+     "dof.blades": "5",
+     "dof.bladeCurve": 0.48,
+     "dof.bladeAngle": 6,
+     "dof.catsEye": 0.62,
+     "dof.rim": 0.24,
+     "dof.loca": 0.37,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "object.clothSmoothing": 0,
+     "object.clothShadow": 0.53,
+     "studio.panel.dir": {
+      "x": -0.39,
+      "y": -0.37
+     },
+     "studio.panel.width": 22,
+     "studio.panel.length": 8,
+     "studio.panel.radiance": 6,
+     "studio.panel.distance": 0.45,
+     "studio.spotA.dir": {
+      "x": -0.64,
+      "y": 0.25
+     },
+     "studio.spotA.size": 2.7,
+     "studio.spotA.radiance": 1560,
+     "studio.spotA.distance": 0.85,
+     "studio.spotB.dir": {
+      "x": -0.4,
+      "y": 0.95
+     },
+     "studio.spotB.size": 0.2,
+     "studio.spotB.radiance": 1720,
+     "studio.spotB.distance": 1.85,
+     "studio.spotC.on": true,
+     "studio.spotC.dir": {
+      "x": 0.88,
+      "y": -0.53
+     },
+     "studio.spotC.size": 0.2,
+     "studio.spotC.radiance": 2800,
+     "studio.spotC.distance": 0.7,
+     "studio.ambient.rims": 0.9,
+     "studio.ambient.fill": 0.45,
+     "studio.ambient.scrim": 0.35,
+     "studio.ambient.cameraSide": 0.019,
+     "studio.ambient.cameraTexture": 0.5,
+     "studio.ambient.backdrop": 0.27,
+     "studio.ambient.rotation": -28,
+     "studio.flash.size": 7.5,
+     "studio.flash.distance": 0.33,
+     "display.ev": 0.8,
+     "display.glare": 0.075,
+     "grain.amount": 0.07,
+     "bump.strength": 1.35,
+     "motion.pose": {
+      "x": 6,
+      "y": -0.5
+     }
+    },
+    "view": {
+     "az": 13.3,
+     "el": -7.65,
+     "zoom": 0.7543,
+     "offset": [
+      -1.77,
+      3.43,
+      2.97
+     ]
+    },
+    "pose": {
+     "rx": -0.5,
+     "ry": 6,
+     "rz": 0,
+     "flip": false
+    }
+   },
+   "emboss": {
+    "values": {
+     "scene.orbitGlide": 0.67,
+     "scene.autoMotion": false,
+     "dof.on": true,
+     "dof.fstop": "5.6",
+     "dof.focus": "point",
+     "dof.point": {
+      "x": -0.184,
+      "y": 0.555
+     },
+     "dof.pointZ": -0.067,
+     "dof.distance": 138,
+     "dof.offset": -3.5,
+     "dof.lens": 86,
+     "dof.blades": "5",
+     "dof.bladeCurve": 0.48,
+     "dof.bladeAngle": 6,
+     "dof.catsEye": 0.62,
+     "dof.rim": 0.24,
+     "dof.loca": 0.37,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "object.clothSmoothing": 0,
+     "object.clothShadow": 0.53,
+     "studio.panel.dir": {
+      "x": -0.39,
+      "y": -0.37
+     },
+     "studio.panel.width": 22,
+     "studio.panel.length": 8,
+     "studio.panel.radiance": 6,
+     "studio.panel.distance": 0.45,
+     "studio.spotA.dir": {
+      "x": -0.64,
+      "y": 0.25
+     },
+     "studio.spotA.size": 2.7,
+     "studio.spotA.radiance": 1560,
+     "studio.spotA.distance": 0.85,
+     "studio.spotB.dir": {
+      "x": -0.4,
+      "y": 0.95
+     },
+     "studio.spotB.size": 0.2,
+     "studio.spotB.radiance": 1720,
+     "studio.spotB.distance": 1.85,
+     "studio.spotC.on": true,
+     "studio.spotC.dir": {
+      "x": 0.88,
+      "y": -0.53
+     },
+     "studio.spotC.size": 0.2,
+     "studio.spotC.radiance": 2800,
+     "studio.spotC.distance": 0.7,
+     "studio.ambient.rims": 0.9,
+     "studio.ambient.fill": 0.45,
+     "studio.ambient.scrim": 0.35,
+     "studio.ambient.cameraSide": 0.019,
+     "studio.ambient.cameraTexture": 0.5,
+     "studio.ambient.backdrop": 0.27,
+     "studio.ambient.rotation": -28,
+     "studio.flash.size": 7.5,
+     "studio.flash.distance": 0.33,
+     "display.ev": 0.8,
+     "display.glare": 0.075,
+     "grain.amount": 0.07,
+     "bump.strength": 1.35,
+     "motion.pose": {
+      "x": 6,
+      "y": -0.5
+     },
+     "emboss.logo": "/defaults/cloth/b214de92.svg",
+     "emboss.x": 25.6,
+     "emboss.y": 54.8,
+     "emboss.width": 40.8,
+     "emboss.height": 15,
+     "emboss.shoulder": 0.1,
+     "emboss.profile": "bevel",
+     "emboss.puff": 0.3,
+     "emboss.foil": "concentric",
+     "emboss.pitch": 1200,
+     "emboss.grooveAngle": 149,
+     "emboss.foilCoverage": 1,
+     "emboss.edgeBreakup": 0.31,
+     "emboss.showThrough": 0,
+     "emboss.gloss": 0,
+     "emboss.sparkleSize": 380,
+     "emboss.foilBump": 0.29,
+     "emboss.textureStrength": 0,
+     "emboss.fibreScale": 1.32,
+     "emboss.doc": "{\"v\":1,\"e\":[{\"i\":\"e1\",\"t\":\"f\",\"n\":\"Logo 1\",\"p\":{\"logo\":\"/defaults/cloth/b214de92.svg\",\"x\":25.7,\"y\":54.5,\"width\":40.8,\"height\":15,\"shoulder\":0.1,\"profile\":\"bevel\",\"puff\":0.3,\"foil\":\"concentric\",\"pitch\":860,\"grooveAngle\":110,\"foilCoverage\":1,\"edgeBreakup\":0.23,\"showThrough\":0,\"gloss\":0.69,\"sparkleSize\":225,\"foilBump\":0.29}},{\"i\":\"e2\",\"t\":\"h\",\"n\":\"Sticker 1\",\"p\":{\"shape\":\"circle\",\"x\":45.6,\"y\":19.4,\"width\":24,\"foilBump\":0.57,\"holo.subject\":\"emblem\",\"holo.size\":78,\"holo.depth\":-0.5,\"holo.yaw\":-5,\"holo.recLight\":{\"x\":-0.23,\"y\":0.69},\"holo.speckle\":0.3,\"holo.backdropDepth\":-155,\"holo.colour\":547,\"holo.views\":16}}]}"
+    },
+    "view": {
+     "az": 13.3,
+     "el": -7.65,
+     "zoom": 0.7543,
+     "offset": [
+      -1.77,
+      3.43,
+      2.97
+     ]
+    },
+    "pose": {
+     "rx": -0.5,
+     "ry": 6,
+     "rz": 0,
+     "flip": false
+    }
+   }
+  }
+ },
+ "stickers": {
+  "title": "Stickers",
+  "material": "prism",
+  "quality": "medium",
+  "surfaces": {
+   "prism": {
+    "values": {
+     "scene.orbitGlide": 0.67,
+     "scene.autoMotion": false,
+     "dof.fstop": "5.6",
+     "dof.focus": "point",
+     "dof.point": {
+      "x": -0.184,
+      "y": 0.555
+     },
+     "dof.pointZ": -0.067,
+     "dof.distance": 138,
+     "dof.offset": -3.5,
+     "dof.lens": 71,
+     "dof.blades": "5",
+     "dof.bladeCurve": 0.48,
+     "dof.bladeAngle": 6,
+     "dof.catsEye": 0.62,
+     "dof.rim": 0.24,
+     "dof.loca": 0.37,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "scene.wall": "v1*w2.disc.-39.196.-990.100.44699030*w1.pan.316.411.248.100.838757912*w3.bar.383.-2.136.142.139261081",
+     "object.wallBorderMm": 2.2,
+     "object.wallShadow": 0.14,
+     "object.wallShadowSoft": 1,
+     "object.wallContact": 1,
+     "object.wallStiffness": 0.31,
+     "object.wallAdhesion": 1,
+     "studio.panel.width": 21,
+     "studio.spotA.size": 0.2,
+     "studio.spotA.radiance": 350,
+     "studio.spotA.distance": 0.7,
+     "studio.spotB.on": false,
+     "studio.spotB.dir": {
+      "x": -0.34,
+      "y": -0.12
+     },
+     "studio.spotB.size": 0.7,
+     "studio.spotC.dir": {
+      "x": 0.02,
+      "y": -0.2
+     },
+     "studio.spotC.size": 0.2,
+     "studio.spotC.radiance": 1660,
+     "studio.spotC.distance": 0.7,
+     "studio.ambient.rims": 2.8,
+     "studio.ambient.fill": 0.7,
+     "studio.ambient.cameraTexture": 0.4,
+     "studio.ambient.backdrop": 0.27,
+     "studio.ambient.rotation": -28,
+     "studio.flash.size": 11,
+     "studio.flash.distance": 0.36,
+     "studio.flash.radiance": 1810,
+     "display.ev": 0.8,
+     "display.glare": 0.075,
+     "grain.amount": 0.07,
+     "bump.strength": 0.83,
+     "prism.pitch": 1230,
+     "prism.grooveAngle": 99,
+     "prism.pattern": "radial",
+     "prism.depth": 118,
+     "prism.fan": 0,
+     "prism.sigTheta": 3.4,
+     "prism.sigPitch": 1.05,
+     "prism.nc": 1.56,
+     "prism.waviness": 0.14,
+     "prism.coatAlpha": 0.13,
+     "prism.orangePeel": 0,
+     "prism.seed": 353
+    },
+    "view": {
+     "az": 14.38,
+     "el": 13.83,
+     "zoom": 1.0197,
+     "offset": [
+      -29.13,
+      -16.51,
+      -6.43
+     ]
+    },
+    "pose": {
+     "rx": 0,
+     "ry": 0,
+     "rz": 0,
+     "flip": false
+    }
+   },
+   "shatter": {
+    "values": {
+     "scene.orbitGlide": 0.67,
+     "scene.autoMotion": false,
+     "dof.fstop": "5.6",
+     "dof.focus": "point",
+     "dof.point": {
+      "x": -0.184,
+      "y": 0.555
+     },
+     "dof.pointZ": -0.067,
+     "dof.distance": 138,
+     "dof.offset": -3.5,
+     "dof.lens": 71,
+     "dof.blades": "5",
+     "dof.bladeCurve": 0.48,
+     "dof.bladeAngle": 6,
+     "dof.catsEye": 0.62,
+     "dof.rim": 0.24,
+     "dof.loca": 0.37,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "scene.wall": "v1*w2.disc.-39.196.-990.100.44699030*w1.pan.316.411.248.100.838757912*w3.bar.383.-2.136.142.139261081",
+     "object.wallBorderMm": 2.2,
+     "object.wallShadow": 0.14,
+     "object.wallShadowSoft": 1,
+     "object.wallContact": 1,
+     "object.wallStiffness": 0.31,
+     "object.wallAdhesion": 1,
+     "studio.panel.width": 21,
+     "studio.spotA.size": 0.2,
+     "studio.spotA.radiance": 350,
+     "studio.spotA.distance": 0.7,
+     "studio.spotB.on": false,
+     "studio.spotB.dir": {
+      "x": -0.34,
+      "y": -0.12
+     },
+     "studio.spotB.size": 0.7,
+     "studio.spotC.dir": {
+      "x": 0.02,
+      "y": -0.2
+     },
+     "studio.spotC.size": 0.2,
+     "studio.spotC.radiance": 1660,
+     "studio.spotC.distance": 0.7,
+     "studio.ambient.rims": 2.8,
+     "studio.ambient.fill": 0.7,
+     "studio.ambient.cameraTexture": 0.4,
+     "studio.ambient.backdrop": 0.27,
+     "studio.ambient.rotation": -28,
+     "studio.flash.size": 11,
+     "studio.flash.distance": 0.36,
+     "studio.flash.radiance": 1810,
+     "display.ev": 0.8,
+     "display.glare": 0.075,
+     "grain.amount": 0.07,
+     "bump.strength": 0.83
+    },
+    "view": {
+     "az": 14.38,
+     "el": 13.83,
+     "zoom": 1.0197,
+     "offset": [
+      -29.13,
+      -16.51,
+      -6.43
+     ]
+    },
+    "pose": {
+     "rx": 0,
+     "ry": 0,
+     "rz": 0,
+     "flip": false
+    }
+   },
+   "nebula": {
+    "values": {
+     "scene.orbitGlide": 0.67,
+     "scene.autoMotion": false,
+     "dof.fstop": "5.6",
+     "dof.focus": "point",
+     "dof.point": {
+      "x": -0.184,
+      "y": 0.555
+     },
+     "dof.pointZ": -0.067,
+     "dof.distance": 138,
+     "dof.offset": -3.5,
+     "dof.lens": 71,
+     "dof.blades": "5",
+     "dof.bladeCurve": 0.48,
+     "dof.bladeAngle": 6,
+     "dof.catsEye": 0.62,
+     "dof.rim": 0.24,
+     "dof.loca": 0.37,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "scene.wall": "v1*w2.disc.-39.196.-990.100.44699030*w1.pan.316.411.248.100.838757912*w3.bar.383.-2.136.142.139261081",
+     "object.wallBorderMm": 2.2,
+     "object.wallShadow": 0.14,
+     "object.wallShadowSoft": 1,
+     "object.wallContact": 1,
+     "object.wallStiffness": 0.31,
+     "object.wallAdhesion": 1,
+     "studio.panel.width": 21,
+     "studio.spotA.size": 0.2,
+     "studio.spotA.radiance": 350,
+     "studio.spotA.distance": 0.7,
+     "studio.spotB.on": false,
+     "studio.spotB.dir": {
+      "x": -0.34,
+      "y": -0.12
+     },
+     "studio.spotB.size": 0.7,
+     "studio.spotC.dir": {
+      "x": 0.02,
+      "y": -0.2
+     },
+     "studio.spotC.size": 0.2,
+     "studio.spotC.radiance": 1660,
+     "studio.spotC.distance": 0.7,
+     "studio.ambient.rims": 2.8,
+     "studio.ambient.fill": 0.7,
+     "studio.ambient.cameraTexture": 0.4,
+     "studio.ambient.backdrop": 0.27,
+     "studio.ambient.rotation": -28,
+     "studio.flash.size": 11,
+     "studio.flash.distance": 0.36,
+     "studio.flash.radiance": 1810,
+     "display.ev": 0.8,
+     "display.glare": 0.075,
+     "grain.amount": 0.07,
+     "bump.strength": 0.83,
+     "nebula.size": 140,
+     "nebula.shape": "round",
+     "nebula.tilt": 2.7,
+     "nebula.curv": 0.05,
+     "nebula.coverage": 0.57,
+     "nebula.pitchMin": 1180,
+     "nebula.pitchMax": 870,
+     "nebula.depth": 146,
+     "nebula.starDensity": 30,
+     "nebula.baseColor": "#22155f",
+     "nebula.nc": 1.65,
+     "nebula.tintEdge": 516,
+     "nebula.tintWidth": 150,
+     "nebula.tintFloor": 0.07,
+     "nebula.waviness": 0.57,
+     "nebula.coatAlpha": 0.01,
+     "nebula.orangePeel": 1.2
+    },
+    "view": {
+     "az": 14.38,
+     "el": 13.83,
+     "zoom": 1.0197,
+     "offset": [
+      -29.13,
+      -16.51,
+      -6.43
+     ]
+    },
+    "pose": {
+     "rx": 0,
+     "ry": 0,
+     "rz": 0,
+     "flip": false
+    }
+   },
+   "sparkle": {
+    "values": {
+     "scene.orbitGlide": 0.67,
+     "scene.autoMotion": false,
+     "dof.fstop": "5.6",
+     "dof.focus": "point",
+     "dof.point": {
+      "x": -0.184,
+      "y": 0.555
+     },
+     "dof.pointZ": -0.067,
+     "dof.distance": 138,
+     "dof.offset": -3.5,
+     "dof.lens": 71,
+     "dof.blades": "5",
+     "dof.bladeCurve": 0.48,
+     "dof.bladeAngle": 6,
+     "dof.catsEye": 0.62,
+     "dof.rim": 0.24,
+     "dof.loca": 0.37,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "scene.wall": "v1*w2.disc.-39.196.-990.100.44699030*w1.pan.316.411.248.100.838757912*w3.bar.383.-2.136.142.139261081",
+     "object.wallBorderMm": 2.2,
+     "object.wallShadow": 0.14,
+     "object.wallShadowSoft": 1,
+     "object.wallContact": 1,
+     "object.wallStiffness": 0.31,
+     "object.wallAdhesion": 1,
+     "studio.panel.width": 21,
+     "studio.spotA.size": 0.2,
+     "studio.spotA.radiance": 350,
+     "studio.spotA.distance": 0.7,
+     "studio.spotB.on": false,
+     "studio.spotB.dir": {
+      "x": -0.34,
+      "y": -0.12
+     },
+     "studio.spotB.size": 0.7,
+     "studio.spotC.dir": {
+      "x": 0.02,
+      "y": -0.2
+     },
+     "studio.spotC.size": 0.2,
+     "studio.spotC.radiance": 1660,
+     "studio.spotC.distance": 0.7,
+     "studio.ambient.rims": 2.8,
+     "studio.ambient.fill": 0.7,
+     "studio.ambient.cameraTexture": 0.4,
+     "studio.ambient.backdrop": 0.27,
+     "studio.ambient.rotation": -28,
+     "studio.flash.size": 11,
+     "studio.flash.distance": 0.36,
+     "studio.flash.radiance": 1810,
+     "display.ev": 0.8,
+     "display.glare": 0.075,
+     "grain.amount": 0.07,
+     "bump.strength": 0.83,
+     "sparkle.size": 215,
+     "sparkle.coverage": 0.8
+    },
+    "view": {
+     "az": 14.38,
+     "el": 13.83,
+     "zoom": 1.0197,
+     "offset": [
+      -29.13,
+      -16.51,
+      -6.43
+     ]
+    },
+    "pose": {
+     "rx": 0,
+     "ry": 0,
+     "rz": 0,
+     "flip": false
+    }
+   },
+   "vortex": {
+    "values": {
+     "scene.orbitGlide": 0.67,
+     "scene.autoMotion": false,
+     "dof.fstop": "5.6",
+     "dof.focus": "point",
+     "dof.point": {
+      "x": -0.184,
+      "y": 0.555
+     },
+     "dof.pointZ": -0.067,
+     "dof.distance": 138,
+     "dof.offset": -3.5,
+     "dof.lens": 71,
+     "dof.blades": "5",
+     "dof.bladeCurve": 0.48,
+     "dof.bladeAngle": 6,
+     "dof.catsEye": 0.62,
+     "dof.rim": 0.24,
+     "dof.loca": 0.37,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "scene.wall": "v1*w2.disc.-39.196.-990.100.44699030*w1.pan.316.411.248.100.838757912*w3.bar.383.-2.136.142.139261081",
+     "object.wallBorderMm": 2.2,
+     "object.wallShadow": 0.14,
+     "object.wallShadowSoft": 1,
+     "object.wallContact": 1,
+     "object.wallStiffness": 0.31,
+     "object.wallAdhesion": 1,
+     "studio.panel.width": 21,
+     "studio.spotA.size": 0.2,
+     "studio.spotA.radiance": 350,
+     "studio.spotA.distance": 0.7,
+     "studio.spotB.on": false,
+     "studio.spotB.dir": {
+      "x": -0.34,
+      "y": -0.12
+     },
+     "studio.spotB.size": 0.7,
+     "studio.spotC.dir": {
+      "x": 0.02,
+      "y": -0.2
+     },
+     "studio.spotC.size": 0.2,
+     "studio.spotC.radiance": 1660,
+     "studio.spotC.distance": 0.7,
+     "studio.ambient.rims": 2.8,
+     "studio.ambient.fill": 0.7,
+     "studio.ambient.cameraTexture": 0.4,
+     "studio.ambient.backdrop": 0.27,
+     "studio.ambient.rotation": -28,
+     "studio.flash.size": 11,
+     "studio.flash.distance": 0.36,
+     "studio.flash.radiance": 1810,
+     "display.ev": 0.8,
+     "display.glare": 0.075,
+     "grain.amount": 0.07,
+     "bump.strength": 0.83
+    },
+    "view": {
+     "az": 14.38,
+     "el": 13.83,
+     "zoom": 1.0197,
+     "offset": [
+      -29.13,
+      -16.51,
+      -6.43
+     ]
+    },
+    "pose": {
+     "rx": 0,
+     "ry": 0,
+     "rz": 0,
+     "flip": false
+    }
+   },
+   "volume": {
+    "values": {
+     "scene.orbitGlide": 0.67,
+     "scene.autoMotion": false,
+     "dof.fstop": "5.6",
+     "dof.focus": "point",
+     "dof.point": {
+      "x": -0.184,
+      "y": 0.555
+     },
+     "dof.pointZ": -0.067,
+     "dof.distance": 138,
+     "dof.offset": -3.5,
+     "dof.lens": 71,
+     "dof.blades": "5",
+     "dof.bladeCurve": 0.48,
+     "dof.bladeAngle": 6,
+     "dof.catsEye": 0.62,
+     "dof.rim": 0.24,
+     "dof.loca": 0.37,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "scene.wall": "v1*w2.disc.-39.196.-990.100.44699030*w1.pan.316.411.248.100.838757912*w3.bar.383.-2.136.142.139261081",
+     "object.wallBorderMm": 2.2,
+     "object.wallShadow": 0.14,
+     "object.wallShadowSoft": 1,
+     "object.wallContact": 1,
+     "object.wallStiffness": 0.31,
+     "object.wallAdhesion": 1,
+     "studio.panel.width": 21,
+     "studio.spotA.size": 0.2,
+     "studio.spotA.radiance": 350,
+     "studio.spotA.distance": 0.7,
+     "studio.spotB.on": false,
+     "studio.spotB.dir": {
+      "x": -0.34,
+      "y": -0.12
+     },
+     "studio.spotB.size": 0.7,
+     "studio.spotC.dir": {
+      "x": 0.02,
+      "y": -0.2
+     },
+     "studio.spotC.size": 0.2,
+     "studio.spotC.radiance": 1660,
+     "studio.spotC.distance": 0.7,
+     "studio.ambient.rims": 2.8,
+     "studio.ambient.fill": 0.7,
+     "studio.ambient.cameraTexture": 0.4,
+     "studio.ambient.backdrop": 0.27,
+     "studio.ambient.rotation": -28,
+     "studio.flash.size": 11,
+     "studio.flash.distance": 0.36,
+     "studio.flash.radiance": 1810,
+     "display.ev": 0.8,
+     "display.glare": 0.075,
+     "grain.amount": 0.07,
+     "bump.strength": 0.83
+    },
+    "view": {
+     "az": 14.38,
+     "el": 13.83,
+     "zoom": 1.0197,
+     "offset": [
+      -29.13,
+      -16.51,
+      -6.43
+     ]
+    },
+    "pose": {
+     "rx": 0,
+     "ry": 0,
+     "rz": 0,
+     "flip": false
+    }
+   }
+  }
+ },
+ "flag": {
+  "title": "Flag",
+  "material": "emboss",
+  "quality": "medium",
+  "surfaces": {
+   "prism": {
+    "values": {
+     "scene.orbitGlide": 0.67,
+     "scene.autoMotion": false,
+     "dof.fstop": "2.2",
+     "dof.focus": "point",
+     "dof.point": {
+      "x": 0.41,
+      "y": 0.178
+     },
+     "dof.pointZ": 0.175,
+     "dof.distance": 138,
+     "dof.offset": -3.5,
+     "dof.lens": 71,
+     "dof.blades": "5",
+     "dof.bladeCurve": 0.48,
+     "dof.bladeAngle": 6,
+     "dof.catsEye": 0.62,
+     "dof.rim": 0.24,
+     "dof.loca": 0.37,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "object.flagTimeSpeed": 0.05,
+     "object.flagWind": 20,
+     "object.flagWindDir": 10,
+     "object.flagWindLift": -23,
+     "object.flagGust": 1,
+     "object.flagTurb": 0.9,
+     "object.flagFlutter": 0.5,
+     "object.flagSeed": 804,
+     "object.flagSize": 101,
+     "object.flagTail": "straight",
+     "object.flagWeight": 172,
+     "object.flagStiffness": 0,
+     "object.flagShadow": 1,
+     "object.flagPoleAngle": 22,
+     "object.flagRings": 6,
+     "object.flagFinial": "spear",
+     "studio.panel.width": 21,
+     "studio.spotA.size": 0.2,
+     "studio.spotA.radiance": 350,
+     "studio.spotA.distance": 0.7,
+     "studio.spotB.on": false,
+     "studio.spotB.dir": {
+      "x": -0.34,
+      "y": -0.12
+     },
+     "studio.spotB.size": 0.7,
+     "studio.spotC.dir": {
+      "x": 0.02,
+      "y": -0.2
+     },
+     "studio.spotC.size": 0.2,
+     "studio.spotC.radiance": 1660,
+     "studio.spotC.distance": 0.7,
+     "studio.ambient.rims": 2.8,
+     "studio.ambient.fill": 0.7,
+     "studio.ambient.cameraTexture": 0.4,
+     "studio.ambient.backdrop": 0.27,
+     "studio.ambient.rotation": -28,
+     "studio.flash.size": 11,
+     "studio.flash.distance": 0.36,
+     "studio.flash.radiance": 1810,
+     "display.ev": 0.8,
+     "display.glare": 0.075,
+     "grain.amount": 0.07,
+     "bump.strength": 0.83,
+     "prism.pitch": 1230,
+     "prism.grooveAngle": 99,
+     "prism.pattern": "radial",
+     "prism.depth": 118,
+     "prism.fan": 0,
+     "prism.sigTheta": 3.4,
+     "prism.sigPitch": 1.05,
+     "prism.nc": 1.56,
+     "prism.waviness": 0.14,
+     "prism.coatAlpha": 0.13,
+     "prism.orangePeel": 0,
+     "prism.seed": 353
+    },
+    "view": {
+     "az": 0,
+     "el": 0,
+     "zoom": 1,
+     "offset": [
+      0,
+      0,
+      0
+     ]
+    },
+    "pose": {
+     "rx": 0,
+     "ry": 0,
+     "rz": 0,
+     "flip": false
+    }
+   },
+   "shatter": {
+    "values": {
+     "scene.orbitGlide": 0.67,
+     "scene.autoMotion": false,
+     "dof.fstop": "2.2",
+     "dof.focus": "point",
+     "dof.point": {
+      "x": 0.41,
+      "y": 0.178
+     },
+     "dof.pointZ": 0.175,
+     "dof.distance": 138,
+     "dof.offset": -3.5,
+     "dof.lens": 71,
+     "dof.blades": "5",
+     "dof.bladeCurve": 0.48,
+     "dof.bladeAngle": 6,
+     "dof.catsEye": 0.62,
+     "dof.rim": 0.24,
+     "dof.loca": 0.37,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "object.flagTimeSpeed": 0.05,
+     "object.flagWind": 20,
+     "object.flagWindDir": 10,
+     "object.flagWindLift": -23,
+     "object.flagGust": 1,
+     "object.flagTurb": 0.9,
+     "object.flagFlutter": 0.5,
+     "object.flagSeed": 804,
+     "object.flagSize": 101,
+     "object.flagTail": "straight",
+     "object.flagWeight": 172,
+     "object.flagStiffness": 0,
+     "object.flagShadow": 1,
+     "object.flagPoleAngle": 22,
+     "object.flagRings": 6,
+     "object.flagFinial": "spear",
+     "studio.panel.width": 21,
+     "studio.spotA.size": 0.2,
+     "studio.spotA.radiance": 350,
+     "studio.spotA.distance": 0.7,
+     "studio.spotB.on": false,
+     "studio.spotB.dir": {
+      "x": -0.34,
+      "y": -0.12
+     },
+     "studio.spotB.size": 0.7,
+     "studio.spotC.dir": {
+      "x": 0.02,
+      "y": -0.2
+     },
+     "studio.spotC.size": 0.2,
+     "studio.spotC.radiance": 1660,
+     "studio.spotC.distance": 0.7,
+     "studio.ambient.rims": 2.8,
+     "studio.ambient.fill": 0.7,
+     "studio.ambient.cameraTexture": 0.4,
+     "studio.ambient.backdrop": 0.27,
+     "studio.ambient.rotation": -28,
+     "studio.flash.size": 11,
+     "studio.flash.distance": 0.36,
+     "studio.flash.radiance": 1810,
+     "display.ev": 0.8,
+     "display.glare": 0.075,
+     "grain.amount": 0.07,
+     "bump.strength": 0.83
+    },
+    "view": {
+     "az": 0,
+     "el": 0,
+     "zoom": 1,
+     "offset": [
+      0,
+      0,
+      0
+     ]
+    },
+    "pose": {
+     "rx": 0,
+     "ry": 0,
+     "rz": 0,
+     "flip": false
+    }
+   },
+   "nebula": {
+    "values": {
+     "scene.orbitGlide": 0.67,
+     "scene.autoMotion": false,
+     "dof.fstop": "2.2",
+     "dof.focus": "point",
+     "dof.point": {
+      "x": 0.41,
+      "y": 0.178
+     },
+     "dof.pointZ": 0.175,
+     "dof.distance": 138,
+     "dof.offset": -3.5,
+     "dof.lens": 71,
+     "dof.blades": "5",
+     "dof.bladeCurve": 0.48,
+     "dof.bladeAngle": 6,
+     "dof.catsEye": 0.62,
+     "dof.rim": 0.24,
+     "dof.loca": 0.37,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "object.flagTimeSpeed": 0.05,
+     "object.flagWind": 20,
+     "object.flagWindDir": 10,
+     "object.flagWindLift": -23,
+     "object.flagGust": 1,
+     "object.flagTurb": 0.9,
+     "object.flagFlutter": 0.5,
+     "object.flagSeed": 804,
+     "object.flagSize": 101,
+     "object.flagTail": "straight",
+     "object.flagWeight": 172,
+     "object.flagStiffness": 0,
+     "object.flagShadow": 1,
+     "object.flagPoleAngle": 22,
+     "object.flagRings": 6,
+     "object.flagFinial": "spear",
+     "studio.panel.width": 21,
+     "studio.spotA.size": 0.2,
+     "studio.spotA.radiance": 350,
+     "studio.spotA.distance": 0.7,
+     "studio.spotB.on": false,
+     "studio.spotB.dir": {
+      "x": -0.34,
+      "y": -0.12
+     },
+     "studio.spotB.size": 0.7,
+     "studio.spotC.dir": {
+      "x": 0.02,
+      "y": -0.2
+     },
+     "studio.spotC.size": 0.2,
+     "studio.spotC.radiance": 1660,
+     "studio.spotC.distance": 0.7,
+     "studio.ambient.rims": 2.8,
+     "studio.ambient.fill": 0.7,
+     "studio.ambient.cameraTexture": 0.4,
+     "studio.ambient.backdrop": 0.27,
+     "studio.ambient.rotation": -28,
+     "studio.flash.size": 11,
+     "studio.flash.distance": 0.36,
+     "studio.flash.radiance": 1810,
+     "display.ev": 0.8,
+     "display.glare": 0.075,
+     "grain.amount": 0.07,
+     "bump.strength": 0.83,
+     "nebula.size": 140,
+     "nebula.shape": "round",
+     "nebula.tilt": 2.7,
+     "nebula.curv": 0.05,
+     "nebula.coverage": 0.57,
+     "nebula.pitchMin": 1180,
+     "nebula.pitchMax": 870,
+     "nebula.depth": 146,
+     "nebula.starDensity": 30,
+     "nebula.baseColor": "#22155f",
+     "nebula.nc": 1.65,
+     "nebula.tintEdge": 516,
+     "nebula.tintWidth": 150,
+     "nebula.tintFloor": 0.07,
+     "nebula.waviness": 0.57,
+     "nebula.coatAlpha": 0.01,
+     "nebula.orangePeel": 1.2
+    },
+    "view": {
+     "az": 0,
+     "el": 0,
+     "zoom": 1,
+     "offset": [
+      0,
+      0,
+      0
+     ]
+    },
+    "pose": {
+     "rx": 0,
+     "ry": 0,
+     "rz": 0,
+     "flip": false
+    }
+   },
+   "sparkle": {
+    "values": {
+     "scene.orbitGlide": 0.67,
+     "scene.autoMotion": false,
+     "dof.fstop": "2.2",
+     "dof.focus": "point",
+     "dof.point": {
+      "x": 0.41,
+      "y": 0.178
+     },
+     "dof.pointZ": 0.175,
+     "dof.distance": 138,
+     "dof.offset": -3.5,
+     "dof.lens": 71,
+     "dof.blades": "5",
+     "dof.bladeCurve": 0.48,
+     "dof.bladeAngle": 6,
+     "dof.catsEye": 0.62,
+     "dof.rim": 0.24,
+     "dof.loca": 0.37,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "object.flagTimeSpeed": 0.05,
+     "object.flagWind": 20,
+     "object.flagWindDir": 10,
+     "object.flagWindLift": -23,
+     "object.flagGust": 1,
+     "object.flagTurb": 0.9,
+     "object.flagFlutter": 0.5,
+     "object.flagSeed": 804,
+     "object.flagSize": 101,
+     "object.flagTail": "straight",
+     "object.flagWeight": 172,
+     "object.flagStiffness": 0,
+     "object.flagShadow": 1,
+     "object.flagPoleAngle": 22,
+     "object.flagRings": 6,
+     "object.flagFinial": "spear",
+     "studio.panel.width": 21,
+     "studio.spotA.size": 0.2,
+     "studio.spotA.radiance": 350,
+     "studio.spotA.distance": 0.7,
+     "studio.spotB.on": false,
+     "studio.spotB.dir": {
+      "x": -0.34,
+      "y": -0.12
+     },
+     "studio.spotB.size": 0.7,
+     "studio.spotC.dir": {
+      "x": 0.02,
+      "y": -0.2
+     },
+     "studio.spotC.size": 0.2,
+     "studio.spotC.radiance": 1660,
+     "studio.spotC.distance": 0.7,
+     "studio.ambient.rims": 2.8,
+     "studio.ambient.fill": 0.7,
+     "studio.ambient.cameraTexture": 0.4,
+     "studio.ambient.backdrop": 0.27,
+     "studio.ambient.rotation": -28,
+     "studio.flash.size": 11,
+     "studio.flash.distance": 0.36,
+     "studio.flash.radiance": 1810,
+     "display.ev": 0.8,
+     "display.glare": 0.075,
+     "grain.amount": 0.07,
+     "bump.strength": 0.83,
+     "sparkle.size": 215,
+     "sparkle.coverage": 0.8
+    },
+    "view": {
+     "az": 0,
+     "el": 0,
+     "zoom": 1,
+     "offset": [
+      0,
+      0,
+      0
+     ]
+    },
+    "pose": {
+     "rx": 0,
+     "ry": 0,
+     "rz": 0,
+     "flip": false
+    }
+   },
+   "vortex": {
+    "values": {
+     "scene.orbitGlide": 0.67,
+     "scene.autoMotion": false,
+     "dof.fstop": "2.2",
+     "dof.focus": "point",
+     "dof.point": {
+      "x": 0.41,
+      "y": 0.178
+     },
+     "dof.pointZ": 0.175,
+     "dof.distance": 138,
+     "dof.offset": -3.5,
+     "dof.lens": 71,
+     "dof.blades": "5",
+     "dof.bladeCurve": 0.48,
+     "dof.bladeAngle": 6,
+     "dof.catsEye": 0.62,
+     "dof.rim": 0.24,
+     "dof.loca": 0.37,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "object.flagTimeSpeed": 0.05,
+     "object.flagWind": 20,
+     "object.flagWindDir": 10,
+     "object.flagWindLift": -23,
+     "object.flagGust": 1,
+     "object.flagTurb": 0.9,
+     "object.flagFlutter": 0.5,
+     "object.flagSeed": 804,
+     "object.flagSize": 101,
+     "object.flagTail": "straight",
+     "object.flagWeight": 172,
+     "object.flagStiffness": 0,
+     "object.flagShadow": 1,
+     "object.flagPoleAngle": 22,
+     "object.flagRings": 6,
+     "object.flagFinial": "spear",
+     "studio.panel.width": 21,
+     "studio.spotA.size": 0.2,
+     "studio.spotA.radiance": 350,
+     "studio.spotA.distance": 0.7,
+     "studio.spotB.on": false,
+     "studio.spotB.dir": {
+      "x": -0.34,
+      "y": -0.12
+     },
+     "studio.spotB.size": 0.7,
+     "studio.spotC.dir": {
+      "x": 0.02,
+      "y": -0.2
+     },
+     "studio.spotC.size": 0.2,
+     "studio.spotC.radiance": 1660,
+     "studio.spotC.distance": 0.7,
+     "studio.ambient.rims": 2.8,
+     "studio.ambient.fill": 0.7,
+     "studio.ambient.cameraTexture": 0.4,
+     "studio.ambient.backdrop": 0.27,
+     "studio.ambient.rotation": -28,
+     "studio.flash.size": 11,
+     "studio.flash.distance": 0.36,
+     "studio.flash.radiance": 1810,
+     "display.ev": 0.8,
+     "display.glare": 0.075,
+     "grain.amount": 0.07,
+     "bump.strength": 0.83
+    },
+    "view": {
+     "az": 0,
+     "el": 0,
+     "zoom": 1,
+     "offset": [
+      0,
+      0,
+      0
+     ]
+    },
+    "pose": {
+     "rx": 0,
+     "ry": 0,
+     "rz": 0,
+     "flip": false
+    }
+   },
+   "volume": {
+    "values": {
+     "scene.orbitGlide": 0.67,
+     "scene.autoMotion": false,
+     "dof.fstop": "2.2",
+     "dof.focus": "point",
+     "dof.point": {
+      "x": 0.41,
+      "y": 0.178
+     },
+     "dof.pointZ": 0.175,
+     "dof.distance": 138,
+     "dof.offset": -3.5,
+     "dof.lens": 71,
+     "dof.blades": "5",
+     "dof.bladeCurve": 0.48,
+     "dof.bladeAngle": 6,
+     "dof.catsEye": 0.62,
+     "dof.rim": 0.24,
+     "dof.loca": 0.37,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "object.flagTimeSpeed": 0.05,
+     "object.flagWind": 20,
+     "object.flagWindDir": 10,
+     "object.flagWindLift": -23,
+     "object.flagGust": 1,
+     "object.flagTurb": 0.9,
+     "object.flagFlutter": 0.5,
+     "object.flagSeed": 804,
+     "object.flagSize": 101,
+     "object.flagTail": "straight",
+     "object.flagWeight": 172,
+     "object.flagStiffness": 0,
+     "object.flagShadow": 1,
+     "object.flagPoleAngle": 22,
+     "object.flagRings": 6,
+     "object.flagFinial": "spear",
+     "studio.panel.width": 21,
+     "studio.spotA.size": 0.2,
+     "studio.spotA.radiance": 350,
+     "studio.spotA.distance": 0.7,
+     "studio.spotB.on": false,
+     "studio.spotB.dir": {
+      "x": -0.34,
+      "y": -0.12
+     },
+     "studio.spotB.size": 0.7,
+     "studio.spotC.dir": {
+      "x": 0.02,
+      "y": -0.2
+     },
+     "studio.spotC.size": 0.2,
+     "studio.spotC.radiance": 1660,
+     "studio.spotC.distance": 0.7,
+     "studio.ambient.rims": 2.8,
+     "studio.ambient.fill": 0.7,
+     "studio.ambient.cameraTexture": 0.4,
+     "studio.ambient.backdrop": 0.27,
+     "studio.ambient.rotation": -28,
+     "studio.flash.size": 11,
+     "studio.flash.distance": 0.36,
+     "studio.flash.radiance": 1810,
+     "display.ev": 0.8,
+     "display.glare": 0.075,
+     "grain.amount": 0.07,
+     "bump.strength": 0.83
+    },
+    "view": {
+     "az": 0,
+     "el": 0,
+     "zoom": 1,
+     "offset": [
+      0,
+      0,
+      0
+     ]
+    },
+    "pose": {
+     "rx": 0,
+     "ry": 0,
+     "rz": 0,
+     "flip": false
+    }
+   },
+   "emboss": {
+    "values": {
+     "scene.orbitGlide": 0.67,
+     "scene.autoMotion": false,
+     "dof.fstop": "2.2",
+     "dof.focus": "point",
+     "dof.point": {
+      "x": 0.41,
+      "y": 0.178
+     },
+     "dof.pointZ": 0.175,
+     "dof.distance": 138,
+     "dof.offset": -3.5,
+     "dof.lens": 71,
+     "dof.blades": "5",
+     "dof.bladeCurve": 0.48,
+     "dof.bladeAngle": 6,
+     "dof.catsEye": 0.62,
+     "dof.rim": 0.24,
+     "dof.loca": 0.37,
+     "scene.background": "colour",
+     "scene.bgColor": "#ffffff",
+     "object.flagTimeSpeed": 0.05,
+     "object.flagWind": 20,
+     "object.flagWindDir": 10,
+     "object.flagWindLift": -23,
+     "object.flagGust": 1,
+     "object.flagTurb": 0.9,
+     "object.flagFlutter": 0.5,
+     "object.flagSeed": 804,
+     "object.flagSize": 101,
+     "object.flagTail": "straight",
+     "object.flagWeight": 172,
+     "object.flagStiffness": 0,
+     "object.flagShadow": 1,
+     "object.flagPoleAngle": 22,
+     "object.flagRings": 6,
+     "object.flagFinial": "spear",
+     "studio.panel.width": 21,
+     "studio.spotA.size": 0.2,
+     "studio.spotA.radiance": 350,
+     "studio.spotA.distance": 0.7,
+     "studio.spotB.on": false,
+     "studio.spotB.dir": {
+      "x": -0.34,
+      "y": -0.12
+     },
+     "studio.spotB.size": 0.7,
+     "studio.spotC.dir": {
+      "x": 0.02,
+      "y": -0.2
+     },
+     "studio.spotC.size": 0.2,
+     "studio.spotC.radiance": 1660,
+     "studio.spotC.distance": 0.7,
+     "studio.ambient.rims": 2.8,
+     "studio.ambient.fill": 0.7,
+     "studio.ambient.cameraTexture": 0.4,
+     "studio.ambient.backdrop": 0.27,
+     "studio.ambient.rotation": -28,
+     "studio.flash.size": 11,
+     "studio.flash.distance": 0.36,
+     "studio.flash.radiance": 1810,
+     "display.ev": 0.8,
+     "display.glare": 0.075,
+     "grain.amount": 0.07,
+     "bump.strength": 0.83,
+     "emboss.logo": "/defaults/flag/b08cf078.svg",
+     "emboss.x": 27.2,
+     "emboss.y": 43.4,
+     "emboss.width": 62.6,
+     "emboss.height": 85,
+     "emboss.shoulder": 0.05,
+     "emboss.foil": "sparkle",
+     "emboss.pitch": 500,
+     "emboss.grooveAngle": 61,
+     "emboss.foilCoverage": 0.44,
+     "emboss.edgeBreakup": 0.37,
+     "emboss.showThrough": 0.44,
+     "emboss.gloss": 0.29,
+     "emboss.sparkleSize": 295,
+     "emboss.foilBump": 0.7,
+     "emboss.textureStrength": 0,
+     "emboss.fibreAmount": 0.53,
+     "emboss.fibreScale": 1.32,
+     "emboss.waviness": 0.4,
+     "emboss.doc": "{\"v\":1,\"e\":[{\"i\":\"e1\",\"t\":\"f\",\"n\":\"Logo 1\",\"p\":{\"logo\":\"/defaults/flag/b08cf078.svg\",\"x\":27.2,\"y\":43.4,\"width\":65.1,\"height\":85,\"shoulder\":0.05,\"puff\":0.52,\"foil\":\"sparkle\",\"pitch\":500,\"grooveAngle\":61,\"foilCoverage\":0.24,\"edgeBreakup\":0.37,\"showThrough\":0.44,\"gloss\":0.29,\"sparkleSize\":215,\"foilBump\":0.7}}]}"
+    },
+    "view": {
+     "az": 0,
+     "el": 0,
+     "zoom": 1,
+     "offset": [
+      0,
+      0,
+      0
+     ]
+    },
+    "pose": {
+     "rx": 0,
+     "ry": 0,
+     "rz": 0,
+     "flip": false
+    }
+   }
+  }
+ }
+}

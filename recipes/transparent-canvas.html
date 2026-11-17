@@ -1,0 +1,54 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Holographic object over a web page · holospot</title>
+<style>
+  html { min-height: 100%; background: linear-gradient(160deg, #1b1035, #0a2a43 60%, #0d3b2e); }
+  body { margin: 0; color: #fff; font: 18px/1.5 system-ui, sans-serif; }
+  main { max-width: 34rem; padding: 12vh 8vw; }
+  h1 { font-size: 3rem; line-height: 1.05; margin: 0 0 1rem; }
+  canvas { position: fixed; inset: 0; pointer-events: none; }
+</style>
+<script type="importmap">{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.187.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.187.0/examples/jsm/",
+  "holospot": "../dist/holo.js"
+} }</script>
+<main>
+  <h1>The page shows through</h1>
+  <p>The canvas is transparent. Only the object and its glare are drawn; the gradient and this text are ordinary HTML behind it.</p>
+</main>
+<script type="module">
+// A transparent WebGL canvas over HTML: create the renderer with alpha: true and leave scene.background unset.
+// The kit then draws only the object (and its glare) and leaves the rest of the canvas clear.
+import * as THREE from "three";
+import { Holo } from "holospot";
+
+const renderer = new THREE.WebGLRenderer({ alpha: true });
+renderer.setClearColor(0x000000, 0);
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.setSize(innerWidth, innerHeight);
+document.body.appendChild(renderer.domElement);
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(30, innerWidth / innerHeight, 0.1, 100);
+camera.position.set(0, 0, 9);
+const mesh = new THREE.Mesh(new THREE.TorusGeometry(1, 0.42, 96, 200), new THREE.MeshStandardMaterial());
+mesh.position.x = 1.1;                                   // right of centre, clear of the text
+scene.add(mesh);
+
+const holo = new Holo(renderer);
+// the page is dark: tell the kit, so the foil is lit for dark surroundings (the option does not paint anything here)
+holo.apply(mesh, { material: "vortex", sizeMm: 110, settings: { "scene.background": "black" } });
+holo.expose();
+
+renderer.setAnimationLoop((t) => {
+  mesh.rotation.set(0.5 + 0.2 * Math.sin(t / 1700), t / 2600, 0);
+  holo.render(scene, camera);
+});
+addEventListener("resize", () => {
+  camera.aspect = innerWidth / innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight);
+});
+</script>

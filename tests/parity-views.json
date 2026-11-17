@@ -1,0 +1,13 @@
+[
+  {"name": "prism", "material": "prism", "quality": "low", "tilt": [8, -18, 0], "settings": {"grain.on": false}},
+  {"name": "nebula", "material": "nebula", "quality": "low", "tilt": [-6, 22, 4], "settings": {"grain.on": false}},
+  {"name": "shatter-black", "material": "shatter", "quality": "low", "tilt": [12, 10, 0], "settings": {"grain.on": false, "scene.background": "black"}},
+  {"name": "sparkle", "material": "sparkle", "quality": "low", "tilt": [0, -30, 0], "settings": {"grain.on": false}},
+  {"name": "vortex-softbox", "material": "vortex", "quality": "low", "tilt": [5, 15, 0], "settings": {"grain.on": false, "studio.preset": "softbox"}},
+  {"name": "volume", "material": "volume", "quality": "low", "tilt": [4, -12, 0], "settings": {"grain.on": false}},
+  {"name": "prism-grain-dof", "material": "prism", "quality": "low", "tilt": [8, -18, 0], "settings": {"dof.on": true, "dof.fstop": "2.8", "display.ev": 0.8}},
+  {"name": "card-prism", "card": true, "material": "prism", "quality": "low", "tilt": [10, -20, 0], "settings": {"grain.on": false}},
+  {"name": "card-shatter-back", "card": true, "material": "shatter", "quality": "low", "tilt": [8, 160, 0], "settings": {"grain.on": false}},
+  {"name": "card-paper", "card": true, "material": "emboss", "quality": "low", "tilt": [6, -14, 0], "settings": {"grain.on": false}},
+  {"name": "card-paper-sticker", "card": true, "material": "emboss", "quality": "low", "tilt": [6, -14, 0], "settings": {"grain.on": false, "emboss.element": "hologram"}}
+]

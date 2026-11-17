@@ -1,0 +1,50 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Holographic object · holospot</title>
+<style>html, body { margin: 0; height: 100%; background: #fff; } canvas { display: block; }</style>
+<script type="importmap">{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.187.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.187.0/examples/jsm/",
+  "holospot": "../dist/holo.js"
+} }</script>
+<script type="module">
+// The smallest complete use of the kit: one mesh, one material, the kit draws the frame.
+// Change MATERIAL to prism, shatter, nebula, sparkle, vortex or volume.
+import * as THREE from "three";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import { Holo } from "holospot";
+
+const MATERIAL = new URLSearchParams(location.search).get("material") ?? "nebula";
+
+const renderer = new THREE.WebGLRenderer();            // no antialias flag needed: the kit multisamples its own target
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.setSize(innerWidth, innerHeight);
+document.body.appendChild(renderer.domElement);
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(22, innerWidth / innerHeight, 0.1, 100);
+camera.position.set(0, 0.8, 12);
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+
+// Any mesh or group works. Its own material is ignored while the kit draws it.
+const mesh = new THREE.Mesh(new THREE.TorusKnotGeometry(1, 0.34, 220, 36), new THREE.MeshStandardMaterial());
+scene.add(mesh);
+
+const holo = new Holo(renderer);
+// sizeMm: how big the object is in the real world (its largest side). The foil's pattern has a real size,
+// so a 40 mm object shows coarse flakes and a 400 mm object fine ones.
+holo.apply(mesh, { material: MATERIAL, sizeMm: 120, settings: { "dof.on": false } });
+holo.expose();                                          // lets tools/shot.mjs check and screenshot this page
+
+renderer.setAnimationLoop(() => {
+  controls.update();
+  holo.render(scene, camera);                           // instead of renderer.render(scene, camera)
+});
+addEventListener("resize", () => {
+  camera.aspect = innerWidth / innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight);
+});
+</script>

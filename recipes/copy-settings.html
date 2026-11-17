@@ -1,0 +1,64 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paste a look from holo.spot · holospot</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #fff; font: 14px system-ui, sans-serif; } canvas { display: block; }
+  #panel { position: fixed; left: 16px; top: 16px; width: 320px; background: rgba(255, 255, 255, 0.92); border: 1px solid #ddd; border-radius: 10px; padding: 12px; }
+  textarea { width: 100%; height: 160px; box-sizing: border-box; font: 12px ui-monospace, monospace; }
+  button { margin-top: 8px; padding: 6px 12px; } #msg { margin-top: 6px; color: #a33; min-height: 1.2em; }
+</style>
+<script type="importmap">{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.187.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.187.0/examples/jsm/",
+  "holospot": "../dist/holo.js"
+} }</script>
+<div id="panel">
+  <b>Paste a look from holo.spot</b>
+  <p>On holo.spot, tune a look, press <code>&lt;/&gt;</code> (Copy settings) in the Object tab, paste it here.</p>
+  <textarea id="blob" placeholder='{ "holoDev": 1, "entity": "object", "material": "prism", "values": { … } }'></textarea>
+  <button id="go">Apply</button><div id="msg"></div>
+</div>
+<script type="module">
+// holo.spot is the design tool for the kit: what its "Copy settings" button puts on the clipboard can be passed to
+// the kit as `settings`, unchanged. The blob names its own material and carries the lights, exposure, grain and
+// background as well as the material's values; holo.apply applies all of it.
+import * as THREE from "three";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import { Holo, shotCamera, shotRotation } from "holospot";
+
+const renderer = new THREE.WebGLRenderer();
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.setSize(innerWidth, innerHeight);
+document.body.appendChild(renderer.domElement);
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera();
+const controls = new OrbitControls(camera, renderer.domElement);
+const mesh = new THREE.Mesh(new THREE.TorusKnotGeometry(1, 0.34, 220, 36), new THREE.MeshStandardMaterial());
+scene.add(mesh);
+
+const holo = new Holo(renderer);
+holo.expose();
+
+async function apply(settings) {
+  // scene: true also takes the blob's lights, exposure, grain and background (the default for the first object only)
+  const obj = holo.apply(mesh, { settings, sizeMm: 90, scene: true });
+  await obj.ready;
+  mesh.rotation.copy(shotRotation(obj.pose));                       // the tilt the look was copied at
+  shotCamera(camera, obj, { aspect: innerWidth / innerHeight });   // and its camera
+  controls.update();
+}
+await apply({ holoDev: 1, entity: "object", material: "prism", values: { "prism.pattern": "radial", "display.ev": 0.6 } });
+
+document.getElementById("go").onclick = async () => {
+  const msg = document.getElementById("msg");
+  try { await apply(JSON.parse(document.getElementById("blob").value)); msg.textContent = ""; }
+  catch (e) { msg.textContent = String(e.message ?? e); }
+};
+renderer.setAnimationLoop(() => { controls.update(); holo.render(scene, camera); });
+addEventListener("resize", () => {
+  camera.aspect = innerWidth / innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight);
+});
+</script>

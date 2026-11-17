@@ -1,0 +1,50 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Holographic card · holospot</title>
+<style>html, body { margin: 0; height: 100%; background: #fff; } canvas { display: block; touch-action: none; }</style>
+<script type="importmap">{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.187.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.187.0/examples/jsm/",
+  "holospot": "../dist/holo.js"
+} }</script>
+<script type="module">
+// A holographic trading card (63 × 88 mm, with its back and edge) that tilts toward the pointer, framed and lit as
+// holo.spot's Holographic card. Change MATERIAL to shatter, nebula, sparkle, vortex or volume.
+import * as THREE from "three";
+import { Holo, shotCamera, shotRotation } from "holospot";
+
+const MATERIAL = new URLSearchParams(location.search).get("material") ?? "prism";
+
+const renderer = new THREE.WebGLRenderer();
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.setSize(innerWidth, innerHeight);
+document.body.appendChild(renderer.domElement);
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera();
+
+const holo = new Holo(renderer);
+const card = holo.card({ material: MATERIAL });         // a THREE.Mesh: add it, move it, rotate it
+scene.add(card);
+holo.expose();
+
+const obj = holo.get(card);
+await obj.ready;
+const frame = () => shotCamera(camera, obj, { aspect: innerWidth / innerHeight });   // holo.spot's framing
+frame();
+
+// rest pose: the tilt holo.spot ships for this look; the pointer adds up to ±18° on top, eased
+const rest = shotRotation(obj.pose);
+const target = { x: 0, y: 0 }, now = { x: 0, y: 0 };
+addEventListener("pointermove", (e) => {
+  target.y = ((e.clientX / innerWidth) * 2 - 1) * 18;
+  target.x = ((e.clientY / innerHeight) * 2 - 1) * 18;
+});
+renderer.setAnimationLoop(() => {
+  now.x += (target.x - now.x) * 0.12;
+  now.y += (target.y - now.y) * 0.12;
+  card.rotation.set(rest.x + THREE.MathUtils.degToRad(now.x), rest.y + THREE.MathUtils.degToRad(now.y), rest.z, "XYZ");
+  holo.render(scene, camera);
+});
+addEventListener("resize", () => { renderer.setSize(innerWidth, innerHeight); frame(); });
+</script>
